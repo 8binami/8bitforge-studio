@@ -1,0 +1,36 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Rain",
+  "category": "fx",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "noise",
+    "dutyCycle": 0.5,
+    "volume": 0.09,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "highpass",
+    "filterCutoff": 4000,
+    "filterQ": 1,
+    "tremoloRate": 12,
+    "tremoloDepth": 40,
+    "envelope": {
+      "attack": 0.2,
+      "decay": 0.1,
+      "sustain": 0.7,
+      "release": 0.5
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "reverbMix": 0.4
+    }
+  }
+}

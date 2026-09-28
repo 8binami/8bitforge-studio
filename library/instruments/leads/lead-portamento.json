@@ -1,0 +1,31 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Portamento Lead",
+  "category": "leads",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sine",
+    "dutyCycle": 0.5,
+    "volume": 0.19,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0.3,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 4000,
+    "filterQ": 2,
+    "envelope": {
+      "attack": 0.05,
+      "decay": 0.2,
+      "sustain": 0.8,
+      "release": 0.4
+    },
+    "vibrato": {
+      "rate": 5,
+      "depth": 12
+    }
+  }
+}

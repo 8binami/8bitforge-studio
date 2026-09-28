@@ -1,0 +1,38 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Vinyl Noise",
+  "category": "fx",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "noise",
+    "dutyCycle": 0.5,
+    "volume": 0.06,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "bandpass",
+    "filterCutoff": 2500,
+    "filterQ": 0.5,
+    "tremoloRate": 0.5,
+    "tremoloDepth": 20,
+    "envelope": {
+      "attack": 0.3,
+      "decay": 0.2,
+      "sustain": 0.9,
+      "release": 0.8
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "crushBits": 10,
+      "crushRate": 0.7,
+      "reverbMix": 0.1
+    }
+  }
+}

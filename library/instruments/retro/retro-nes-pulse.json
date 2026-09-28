@@ -1,0 +1,27 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "NES Pulse",
+  "category": "retro",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "square",
+    "dutyCycle": 0.125,
+    "volume": 0.17,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.08,
+      "sustain": 0.6,
+      "release": 0.08
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    }
+  }
+}

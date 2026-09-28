@@ -1,0 +1,45 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "kits",
+  "name": "Tropical",
+  "category": "acoustic",
+  "tags": [],
+  "cover": "img/kits/tropical.svg",
+  "data": {
+    "tracks": [
+      {
+        "presetKey": "lead-steel-drum",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "pad-tropical",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "bass-dub",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "arp-tropical",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "kick-conga",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "snare-bongo",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "drum-shaker",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "fx-ocean",
+        "presetType": "builtin"
+      }
+    ]
+  }
+}

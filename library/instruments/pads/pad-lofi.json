@@ -1,0 +1,39 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Lofi Pad",
+  "category": "pads",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "square",
+    "dutyCycle": 0.5,
+    "volume": 0.14,
+    "detune": 10,
+    "pitchEnv": 0,
+    "glide": 0.2,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 1500,
+    "filterQ": 1.5,
+    "unisonVoices": 3,
+    "unisonDetune": 15,
+    "unisonSpread": 60,
+    "envelope": {
+      "attack": 0.4,
+      "decay": 0.4,
+      "sustain": 0.7,
+      "release": 0.8
+    },
+    "vibrato": {
+      "rate": 2,
+      "depth": 6
+    },
+    "fx": {
+      "crushBits": 12,
+      "crushRate": 0.9,
+      "reverbMix": 0.3
+    }
+  }
+}

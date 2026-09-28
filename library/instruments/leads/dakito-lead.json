@@ -1,0 +1,32 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Dakito LEAD",
+  "category": "leads",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "volume": 0.18,
+    "filterCutoff": 14499.293511963875,
+    "filterQ": 1.058338,
+    "filterEnabled": true,
+    "filterLfoRate": 1.2358392754688985,
+    "filterLfoDepth": 8.589759,
+    "lfoFilterRate": 16.5347086825641,
+    "lfoFilterDepth": 6.282067,
+    "tremoloRate": 5.625722471676772,
+    "tremoloDepth": 14.74360539362981,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.08,
+      "sustain": 0.17198752663658903,
+      "release": 0.0794874924879807
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    }
+  }
+}

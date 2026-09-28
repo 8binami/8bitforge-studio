@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Hardstyle",
+  "category": "electronic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Hard kick with reverse bass feel",
+    "variants": {
+      "base": {
+        "kick": "x.x.x.x.x.x.x.x.",
+        "snare": "....x.......x...",
+        "hihat": "..x...x...x...x."
+      },
+      "variation": {
+        "kick": "x.x.x.x.x.x.x.x.",
+        "snare": "....x...x...x...",
+        "hihat": ".x.x.x.x.x.x.x.x"
+      },
+      "fill": {
+        "kick": "x.x.x.x.x.x.xxxx",
+        "snare": "....x.......xxxx",
+        "hihat": "..x...x...x....."
+      }
+    }
+  }
+}

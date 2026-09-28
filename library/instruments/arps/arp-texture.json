@@ -1,0 +1,39 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Texture",
+  "category": "arps",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "noise",
+    "dutyCycle": 0.5,
+    "volume": 0.1,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "bandpass",
+    "filterCutoff": 2000,
+    "filterQ": 4,
+    "filterLfoRate": 0.2,
+    "filterLfoDepth": 70,
+    "envelope": {
+      "attack": 0.5,
+      "decay": 0.5,
+      "sustain": 0.8,
+      "release": 1.5
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "reverbMix": 0.55,
+      "delayTime": 0.5,
+      "delayFeedback": 0.6,
+      "delayMix": 0.3
+    }
+  }
+}

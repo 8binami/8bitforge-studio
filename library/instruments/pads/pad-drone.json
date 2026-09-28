@@ -1,0 +1,42 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Drone",
+  "category": "pads",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.12,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 1000,
+    "filterQ": 4,
+    "filterLfoRate": 0.1,
+    "filterLfoDepth": 30,
+    "unisonVoices": 8,
+    "unisonDetune": 50,
+    "unisonSpread": 90,
+    "envelope": {
+      "attack": 1.5,
+      "decay": 0.5,
+      "sustain": 0.95,
+      "release": 2
+    },
+    "vibrato": {
+      "rate": 1,
+      "depth": 3
+    },
+    "fx": {
+      "reverbMix": 0.5,
+      "chorusRate": 0.5,
+      "chorusDepth": 0.5,
+      "chorusMix": 0.3
+    }
+  }
+}

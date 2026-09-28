@@ -1,0 +1,24 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "generator-presets",
+  "name": "Dark Circus 2",
+  "category": "ambient",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "chaos": 39,
+    "complexity": 69,
+    "density": 43,
+    "swing": 0,
+    "humanize": 0,
+    "octaveMin": 3,
+    "octaveMax": 3,
+    "rootKey": "F#",
+    "scaleType": "harmonic_minor",
+    "genre": "ambient",
+    "mood": "dark",
+    "phraseLength": 8,
+    "seed": 0
+  }
+}

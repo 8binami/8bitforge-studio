@@ -1,0 +1,46 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Tropical Pluck",
+  "category": "arps",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "triangle",
+    "dutyCycle": 0.5,
+    "volume": 0.18,
+    "detune": 0,
+    "pitchEnv": 3,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 5000,
+    "filterQ": 2,
+    "filterEnvAmount": 10,
+    "filterEnvAttack": 0.001,
+    "filterEnvRelease": 0.2,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.25,
+      "sustain": 0.1,
+      "release": 0.3
+    },
+    "vibrato": {
+      "rate": 2,
+      "depth": 5
+    },
+    "fx": {
+      "delayTime": 0.25,
+      "delayFeedback": 0.25,
+      "delayMix": 0.2,
+      "reverbMix": 0.2
+    },
+    "arp": {
+      "mode": "updown",
+      "rate": "1/8",
+      "octaves": 2,
+      "gate": 0.65
+    }
+  }
+}

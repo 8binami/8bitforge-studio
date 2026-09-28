@@ -1,0 +1,30 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "E-Kit Tom",
+  "category": "drums",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sine",
+    "dutyCycle": 0.5,
+    "volume": 0.33,
+    "detune": 0,
+    "pitchEnv": 24,
+    "glide": 0,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.25,
+      "sustain": 0,
+      "release": 0.1
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "reverbMix": 0.15
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Acid Bass",
+  "category": "bass",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.23,
+    "detune": 0,
+    "pitchEnv": 12,
+    "glide": 0.1,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.15,
+      "sustain": 0.4,
+      "release": 0.1
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    }
+  }
+}

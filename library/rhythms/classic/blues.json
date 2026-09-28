@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Blues",
+  "category": "classic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "12-bar blues shuffle feel",
+    "variants": {
+      "base": {
+        "kick": "x.....x.x.......",
+        "snare": "....x.......x...",
+        "hihat": "x..xx..xx..xx..x"
+      },
+      "variation": {
+        "kick": "x.....x.x.....x.",
+        "snare": "....x.....x.x...",
+        "hihat": "x..xx..xx..xx..x"
+      },
+      "fill": {
+        "kick": "x.....x.x.......",
+        "snare": "....x.......xxxx",
+        "hihat": "x..xx..xx..x...."
+      }
+    }
+  }
+}

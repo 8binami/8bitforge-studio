@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Punk",
+  "category": "classic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Fast aggressive straight-8th beat",
+    "variants": {
+      "base": {
+        "kick": "x.x.x.x.x.x.x.x.",
+        "snare": "....x.......x...",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      },
+      "variation": {
+        "kick": "x.x.xxx.x.x.xxx.",
+        "snare": "....x...x...x...",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      },
+      "fill": {
+        "kick": "x.x.x.x.x.x.xxxx",
+        "snare": "....x.......xxxx",
+        "hihat": "xxxxxxxxxxxx...."
+      }
+    }
+  }
+}

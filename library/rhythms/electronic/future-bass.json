@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Future Bass",
+  "category": "electronic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Syncopated modern bass music groove",
+    "variants": {
+      "base": {
+        "kick": "x..x....x..x....",
+        "snare": "....x.......x...",
+        "hihat": "x.x.x.xxx.x...x."
+      },
+      "variation": {
+        "kick": "x..x..x.x..x....",
+        "snare": "....x.....x.x...",
+        "hihat": "x.x.xxxxx.x..xx."
+      },
+      "fill": {
+        "kick": "x..x....x..x....",
+        "snare": "....x.......xxxx",
+        "hihat": "x.x.x.xxx.x....."
+      }
+    }
+  }
+}

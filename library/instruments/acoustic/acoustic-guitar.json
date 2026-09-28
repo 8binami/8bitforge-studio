@@ -1,0 +1,40 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Guitar",
+  "category": "acoustic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "triangle",
+    "dutyCycle": 0.5,
+    "volume": 0.21,
+    "detune": 0,
+    "pitchEnv": 1,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 3500,
+    "filterQ": 2,
+    "filterEnvAmount": 10,
+    "filterEnvAttack": 0.001,
+    "filterEnvRelease": 0.3,
+    "filterKeyTrack": 0.3,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.3,
+      "sustain": 0.2,
+      "release": 0.35
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "delayTime": 0.2,
+      "delayFeedback": 0.15,
+      "delayMix": 0.1
+    }
+  }
+}

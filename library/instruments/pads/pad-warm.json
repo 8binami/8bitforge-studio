@@ -1,0 +1,42 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Warm Pad",
+  "category": "pads",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "square",
+    "dutyCycle": 0.5,
+    "volume": 0.15,
+    "detune": 5,
+    "pitchEnv": 0,
+    "glide": 0.15,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 800,
+    "filterQ": 1.5,
+    "filterEnvAmount": 6,
+    "filterEnvAttack": 0.6,
+    "filterEnvRelease": 0.8,
+    "unisonVoices": 3,
+    "unisonDetune": 15,
+    "unisonSpread": 40,
+    "envelope": {
+      "attack": 0.6,
+      "decay": 0.4,
+      "sustain": 0.8,
+      "release": 1
+    },
+    "vibrato": {
+      "rate": 2.5,
+      "depth": 5
+    },
+    "fx": {
+      "chorusRate": 1,
+      "chorusDepth": 0.35,
+      "chorusMix": 0.25
+    }
+  }
+}

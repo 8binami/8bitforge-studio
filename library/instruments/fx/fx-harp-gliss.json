@@ -1,0 +1,36 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Harp Gliss",
+  "category": "fx",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sine",
+    "dutyCycle": 0.5,
+    "volume": 0.16,
+    "detune": 0,
+    "pitchEnv": 24,
+    "glide": 0.3,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.4,
+      "sustain": 0.1,
+      "release": 0.5
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "reverbMix": 0.4
+    },
+    "arp": {
+      "mode": "up",
+      "rate": "1/16",
+      "octaves": 3,
+      "gate": 0.5
+    }
+  }
+}

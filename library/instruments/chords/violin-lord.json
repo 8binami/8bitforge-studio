@@ -1,0 +1,44 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Violin Lord",
+  "category": "chords",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "volume": 0.17,
+    "detune": 3,
+    "pitchEnv": -31.47098,
+    "glide": 0.2730769230769231,
+    "filterCutoff": 1352.9533514412785,
+    "filterQ": 6.655,
+    "filterEnabled": true,
+    "filterKeyTrack": 0.6,
+    "tremoloRate": 5,
+    "tremoloDepth": 12,
+    "filterEnvAttack": 0.18285185452085614,
+    "filterEnvRelease": 1.0538461538461539,
+    "lfo1Delay": 0.5,
+    "envelope": {
+      "attack": 0.345,
+      "decay": 1.13,
+      "sustain": 0.52,
+      "release": 0.7153846
+    },
+    "vibrato": {
+      "rate": 0.4339169,
+      "depth": 1.1538461538461497
+    },
+    "fx": {
+      "delayTime": 0.5,
+      "delayFeedback": 0.4,
+      "delayMix": 0.3,
+      "reverbMix": 0.5,
+      "chorusRate": 2,
+      "chorusDepth": 0.2999999948466818,
+      "chorusMix": 0.2
+    }
+  }
+}

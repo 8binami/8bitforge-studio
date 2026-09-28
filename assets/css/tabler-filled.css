@@ -1,0 +1,33 @@
+/* ==============================================
+   8BitForge Studio: the few filled icons
+   ==============================================
+   After Tabler 3.33 the filled icons moved to a font of their own, and the
+   stylesheet that ships with it claims `.ti` for that font, which would turn
+   every outline icon in the studio into a filled one. So it is not imported:
+   the five filled icons the markup names are mapped here, on the filled font,
+   and everything else keeps the outline font of `tabler-icons.css`.
+
+   The code points come from `tabler-icons-filled.css` of the same release.
+   A new filled icon in the markup needs its line here.
+*/
+@font-face {
+    font-family: "tabler-icons-filled";
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url("../../node_modules/@tabler/icons-webfont/dist/fonts/tabler-icons-filled.woff2") format("woff2");
+}
+
+.ti-circle-filled::before,
+.ti-heart-filled::before,
+.ti-player-pause-filled::before,
+.ti-player-play-filled::before,
+.ti-point-filled::before {
+    font-family: "tabler-icons-filled" !important;
+}
+
+.ti-circle-filled::before { content: "\f671"; }
+.ti-heart-filled::before { content: "\f67c"; }
+.ti-player-pause-filled::before { content: "\f690"; }
+.ti-player-play-filled::before { content: "\f691"; }
+.ti-point-filled::before { content: "\f698"; }

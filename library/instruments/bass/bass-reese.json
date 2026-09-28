@@ -1,0 +1,27 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Reese Bass",
+  "category": "bass",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.24,
+    "detune": 35,
+    "pitchEnv": 0,
+    "glide": 0.2,
+    "envelope": {
+      "attack": 0.02,
+      "decay": 0.2,
+      "sustain": 0.85,
+      "release": 0.15
+    },
+    "vibrato": {
+      "rate": 2,
+      "depth": 5
+    }
+  }
+}

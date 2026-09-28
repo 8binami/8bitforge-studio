@@ -1,0 +1,42 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Trance Lead",
+  "category": "synth",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "square",
+    "dutyCycle": 0.5,
+    "volume": 0.18,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 6000,
+    "filterQ": 4,
+    "filterEnvAmount": 10,
+    "filterEnvAttack": 0.01,
+    "filterEnvRelease": 0.3,
+    "unisonVoices": 4,
+    "unisonDetune": 18,
+    "unisonSpread": 50,
+    "envelope": {
+      "attack": 0.005,
+      "decay": 0.15,
+      "sustain": 0.7,
+      "release": 0.2
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "delayTime": 0.375,
+      "delayFeedback": 0.35,
+      "delayMix": 0.2
+    }
+  }
+}

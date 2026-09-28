@@ -1,0 +1,35 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "POKCKET DB",
+  "category": "leads",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "square",
+    "volume": 0.22,
+    "filterCutoff": 510.9385522081049,
+    "filterQ": 7.268338,
+    "filterEnabled": true,
+    "filterLfoRate": 11.764843367174942,
+    "filterLfoDepth": 54.743605393629814,
+    "filterEnvAttack": 0.5745378,
+    "filterEnvRelease": 0.44871826171874996,
+    "octaveOffset": -1,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.05,
+      "sustain": 0.9,
+      "release": 0.04
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "delayFeedback": 0.3,
+      "crushBits": 4
+    }
+  }
+}

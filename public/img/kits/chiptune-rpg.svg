@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="175" viewBox="0 0 280 175">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#27ae60"/><stop offset="100%" style="stop-color:#2ecc71"/></linearGradient></defs>
+  <rect width="280" height="175" fill="url(#g)"/>
+  <text x="140" y="75" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-family="monospace" font-size="22" font-weight="bold">CHIPTUNE</text>
+  <text x="140" y="105" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="16">RPG</text>
+  <rect x="110" y="125" width="12" height="12" fill="rgba(255,255,255,0.25)"/><rect x="128" y="125" width="12" height="12" fill="rgba(255,255,255,0.2)"/><rect x="146" y="125" width="12" height="12" fill="rgba(255,255,255,0.25)"/>
+</svg>

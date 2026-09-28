@@ -1,0 +1,43 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Shimmer",
+  "category": "pads",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.12,
+    "detune": 5,
+    "pitchEnv": 0,
+    "glide": 0,
+    "octaveOffset": 1,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 4000,
+    "filterQ": 2,
+    "unisonVoices": 4,
+    "unisonDetune": 20,
+    "unisonSpread": 80,
+    "tremoloRate": 3,
+    "tremoloDepth": 15,
+    "envelope": {
+      "attack": 1,
+      "decay": 0.5,
+      "sustain": 0.8,
+      "release": 1.8
+    },
+    "vibrato": {
+      "rate": 2,
+      "depth": 3
+    },
+    "fx": {
+      "reverbMix": 0.55,
+      "delayTime": 0.5,
+      "delayFeedback": 0.4,
+      "delayMix": 0.2
+    }
+  }
+}

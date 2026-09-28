@@ -1,0 +1,45 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "kits",
+  "name": "RP2A03 (NES)",
+  "category": "retro",
+  "tags": [],
+  "cover": "img/kits/rp2a03.svg",
+  "data": {
+    "tracks": [
+      {
+        "presetKey": "retro-2a03-pulse1",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "retro-2a03-pulse2",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "retro-2a03-triangle",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "retro-2a03-arp",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "kick-2a03",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "snare-2a03",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "hat-2a03",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "fx-2a03-sweep",
+        "presetType": "builtin"
+      }
+    ]
+  }
+}

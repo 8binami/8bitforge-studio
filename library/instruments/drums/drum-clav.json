@@ -1,0 +1,28 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Clavstick",
+  "category": "drums",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "square",
+    "dutyCycle": 0.5,
+    "volume": 0.24,
+    "detune": 0,
+    "pitchEnv": 12,
+    "glide": 0,
+    "octaveOffset": 1,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.025,
+      "sustain": 0,
+      "release": 0.015
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    }
+  }
+}

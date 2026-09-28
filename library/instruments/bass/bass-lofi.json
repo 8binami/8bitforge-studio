@@ -1,0 +1,36 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Lofi Bass",
+  "category": "bass",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sine",
+    "dutyCycle": 0.5,
+    "volume": 0.28,
+    "detune": 0,
+    "pitchEnv": 3,
+    "glide": 0.08,
+    "octaveOffset": -1,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 800,
+    "filterQ": 2,
+    "envelope": {
+      "attack": 0.01,
+      "decay": 0.25,
+      "sustain": 0.6,
+      "release": 0.12
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "crushBits": 12,
+      "crushRate": 0.85
+    }
+  }
+}

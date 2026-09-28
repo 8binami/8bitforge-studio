@@ -1,0 +1,45 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "kits",
+  "name": "Jazz Fusion",
+  "category": "acoustic",
+  "tags": [],
+  "cover": "img/kits/jazz.svg",
+  "data": {
+    "tracks": [
+      {
+        "presetKey": "lead-jazz",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "chord-ep",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "bass-walking",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "arp-jazz",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "kick-808",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "snare-brush",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "drum-ride",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "fx-organ-stab",
+        "presetType": "builtin"
+      }
+    ]
+  }
+}

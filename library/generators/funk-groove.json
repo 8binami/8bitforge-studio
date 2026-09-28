@@ -1,0 +1,24 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "generator-presets",
+  "name": "Funk Groove",
+  "category": "funk",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "genre": "funk",
+    "mood": "happy",
+    "rootKey": "A",
+    "scaleType": "mixolydian",
+    "chaos": 40,
+    "complexity": 55,
+    "density": 60,
+    "swing": 25,
+    "humanize": 10,
+    "octaveMin": 2,
+    "octaveMax": 4,
+    "phraseLength": 8,
+    "seed": 0
+  }
+}

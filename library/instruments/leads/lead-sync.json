@@ -1,0 +1,27 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Sync Lead",
+  "category": "leads",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.18,
+    "detune": 25,
+    "pitchEnv": 3,
+    "glide": 0,
+    "envelope": {
+      "attack": 0.01,
+      "decay": 0.08,
+      "sustain": 0.7,
+      "release": 0.2
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "kits",
+  "name": "NES Classic",
+  "category": "retro",
+  "tags": [],
+  "cover": "img/kits/nes-classic.svg",
+  "data": {
+    "tracks": [
+      {
+        "presetKey": "retro-nes-pulse",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "retro-gb-lead",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "retro-nes-tri",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "retro-c64-arp",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "kick-nes",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "snare-808",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "hat-closed",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "fx-coin",
+        "presetType": "builtin"
+      }
+    ]
+  }
+}

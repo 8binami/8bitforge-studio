@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="175" viewBox="0 0 280 175">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#b8860b"/><stop offset="100%" style="stop-color:#8b4513"/></linearGradient></defs>
+  <rect width="280" height="175" fill="url(#g)"/>
+  <text x="140" y="78" text-anchor="middle" fill="rgba(255,240,200,0.95)" font-family="monospace" font-size="26" font-weight="bold">LO-FI</text>
+  <text x="140" y="105" text-anchor="middle" fill="rgba(255,240,200,0.6)" font-family="monospace" font-size="14">Hip-Hop</text>
+  <text x="140" y="122" text-anchor="middle" fill="rgba(255,240,200,0.35)" font-family="monospace" font-size="10">chill · study · vibes</text>
+  <circle cx="45"  cy="152" r="6" fill="rgba(255,240,200,0.2)"/>
+  <circle cx="45"  cy="152" r="3" fill="rgba(255,240,200,0.3)"/>
+  <line   x1="45" y1="146" x2="45" y2="135" stroke="rgba(255,240,200,0.25)" stroke-width="1.5"/>
+  <circle cx="90"  cy="155" r="6" fill="rgba(255,240,200,0.2)"/>
+  <circle cx="90"  cy="155" r="3" fill="rgba(255,240,200,0.3)"/>
+  <line   x1="90" y1="149" x2="90" y2="138" stroke="rgba(255,240,200,0.25)" stroke-width="1.5"/>
+  <circle cx="135" cy="150" r="6" fill="rgba(255,240,200,0.2)"/>
+  <circle cx="135" cy="150" r="3" fill="rgba(255,240,200,0.3)"/>
+  <line   x1="135" y1="144" x2="135" y2="133" stroke="rgba(255,240,200,0.25)" stroke-width="1.5"/>
+</svg>

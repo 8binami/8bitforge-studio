@@ -1,0 +1,24 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "generator-presets",
+  "name": "Boss Rush",
+  "category": "boss",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "genre": "boss",
+    "mood": "aggressive",
+    "rootKey": "D",
+    "scaleType": "harmonic_minor",
+    "chaos": 70,
+    "complexity": 75,
+    "density": 80,
+    "swing": 0,
+    "humanize": 0,
+    "octaveMin": 2,
+    "octaveMax": 5,
+    "phraseLength": 16,
+    "seed": 0
+  }
+}

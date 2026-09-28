@@ -1,0 +1,45 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "kits",
+  "name": "Deep House",
+  "category": "synth",
+  "tags": [],
+  "cover": "img/kits/deep-house.svg",
+  "data": {
+    "tracks": [
+      {
+        "presetKey": "lead-deep-house",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "pad-deep-house",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "bass-deep-house",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "arp-deep-house",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "kick-808",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "snare-clap",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "hat-open",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "fx-wind",
+        "presetType": "builtin"
+      }
+    ]
+  }
+}

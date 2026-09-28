@@ -1,0 +1,24 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "generator-presets",
+  "name": "Menu Lullaby",
+  "category": "menu",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "genre": "menu",
+    "mood": "peaceful",
+    "rootKey": "C",
+    "scaleType": "pentatonic_major",
+    "chaos": 20,
+    "complexity": 30,
+    "density": 35,
+    "swing": 10,
+    "humanize": 10,
+    "octaveMin": 3,
+    "octaveMax": 5,
+    "phraseLength": 8,
+    "seed": 0
+  }
+}

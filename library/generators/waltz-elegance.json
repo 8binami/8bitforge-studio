@@ -1,0 +1,24 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "generator-presets",
+  "name": "Waltz Elegance",
+  "category": "waltz",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "genre": "waltz",
+    "mood": "melancholy",
+    "rootKey": "F",
+    "scaleType": "minor",
+    "chaos": 30,
+    "complexity": 45,
+    "density": 40,
+    "swing": 15,
+    "humanize": 10,
+    "octaveMin": 3,
+    "octaveMax": 4,
+    "phraseLength": 8,
+    "seed": 0
+  }
+}

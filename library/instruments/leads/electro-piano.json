@@ -1,0 +1,41 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Electro Piano",
+  "category": "leads",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "volume": 0.18,
+    "filterCutoff": 151.827,
+    "filterQ": 5.6253906250000005,
+    "filterEnabled": true,
+    "filterLfoRate": 4.231488,
+    "filterLfoDepth": 6.941106,
+    "filterEnvAttack": 0.4021414751479883,
+    "filterEnvRelease": 1.5426682692307692,
+    "unisonVoices": 6,
+    "envelope": {
+      "attack": 0.01,
+      "decay": 0.1,
+      "sustain": 0.7,
+      "release": 0.2
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "distortion": 1,
+      "delayTime": 0.5,
+      "delayFeedback": 0.4,
+      "delayMix": 0.3,
+      "reverbMix": 0.24,
+      "chorusRate": 2,
+      "chorusDepth": 0.2999999948466818,
+      "chorusMix": 0.2
+    }
+  }
+}

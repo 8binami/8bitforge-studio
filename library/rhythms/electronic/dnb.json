@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Drum & Bass",
+  "category": "electronic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "The fast break that defines drum and bass",
+    "variants": {
+      "base": {
+        "kick": "x.....x.....x.x.",
+        "snare": "....x.......x...",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      },
+      "variation": {
+        "kick": "x.....x...x...x.",
+        "snare": "....x....x..x...",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      },
+      "fill": {
+        "kick": "x.....x.........",
+        "snare": "....x.......xxxx",
+        "hihat": "xxxxxxxxxxxx...."
+      }
+    }
+  }
+}

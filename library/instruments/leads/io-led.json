@@ -1,0 +1,45 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "IO Led",
+  "category": "leads",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "volume": 0.17,
+    "detune": 8,
+    "filterCutoff": 1511.8194311799816,
+    "filterQ": 5.275,
+    "filterEnabled": true,
+    "filterEnvAttack": 0.5567581,
+    "filterEnvRelease": 0.46923076923076934,
+    "unisonVoices": 4,
+    "unisonDetune": 20,
+    "unisonSpread": 60,
+    "lfo1Wave": "square",
+    "lfo1Delay": 1.59,
+    "lfo2Wave": "square",
+    "lfo2Delay": 1.49,
+    "envelope": {
+      "attack": 0,
+      "decay": 0,
+      "sustain": 0.8211335,
+      "release": 0.42307692307692313
+    },
+    "vibrato": {
+      "rate": 2.476867151354924,
+      "depth": 5
+    },
+    "fx": {
+      "delayTime": 0.5,
+      "delayFeedback": 0.3,
+      "delayMix": 0.2,
+      "reverbMix": 0.2,
+      "chorusRate": 1.5,
+      "chorusDepth": 0.2999999948466818,
+      "chorusMix": 0.25
+    }
+  }
+}

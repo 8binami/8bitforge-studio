@@ -1,0 +1,41 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Dub Bass",
+  "category": "bass",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sine",
+    "dutyCycle": 0.5,
+    "volume": 0.3,
+    "detune": 0,
+    "pitchEnv": 6,
+    "glide": 0.12,
+    "octaveOffset": -1,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 700,
+    "filterQ": 4,
+    "filterEnvAmount": 10,
+    "filterEnvAttack": 0.001,
+    "filterEnvRelease": 0.25,
+    "envelope": {
+      "attack": 0.005,
+      "decay": 0.3,
+      "sustain": 0.7,
+      "release": 0.2
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "reverbMix": 0.2,
+      "delayTime": 0.375,
+      "delayFeedback": 0.4,
+      "delayMix": 0.2
+    }
+  }
+}

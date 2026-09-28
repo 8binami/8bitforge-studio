@@ -1,0 +1,27 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Pluck",
+  "category": "arps",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "triangle",
+    "dutyCycle": 0.5,
+    "volume": 0.18,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.2,
+      "sustain": 0.1,
+      "release": 0.15
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    }
+  }
+}

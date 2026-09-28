@@ -1,0 +1,34 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Bamboo",
+  "category": "acoustic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sine",
+    "volume": 0.18,
+    "pitchEnv": -8.47058823529412,
+    "glide": 0.3192307692307692,
+    "filterEnabled": true,
+    "filterKeyTrack": 35,
+    "filterLfoRate": 5.631763,
+    "filterLfoDepth": 66.53846,
+    "filterEnvAmount": 48,
+    "filterEnvAttack": 0.8181596289968269,
+    "filterEnvRelease": 0.3923077,
+    "unisonVoices": 8,
+    "unisonDetune": 6,
+    "envelope": {
+      "attack": 0,
+      "decay": 0,
+      "sustain": 0.9639573671792369,
+      "release": 1.7153846153846155
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    }
+  }
+}

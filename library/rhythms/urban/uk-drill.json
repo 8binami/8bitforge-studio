@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "UK Drill",
+  "category": "urban",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Sliding hi-hats with dark UK flavor",
+    "variants": {
+      "base": {
+        "kick": "x....x....x.....",
+        "snare": "....x.......x...",
+        "hihat": "xxxxxxx.xxx.xxx."
+      },
+      "variation": {
+        "kick": "x..x.x....x...x.",
+        "snare": "....x.......x...",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      },
+      "fill": {
+        "kick": "x....x....x.....",
+        "snare": "....x.......xxxx",
+        "hihat": "xxxxxxx.xxx.xxxx"
+      }
+    }
+  }
+}

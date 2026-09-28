@@ -1,0 +1,27 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Power Up",
+  "category": "fx",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "square",
+    "dutyCycle": 0.25,
+    "volume": 0.19,
+    "detune": 0,
+    "pitchEnv": 24,
+    "glide": 0.3,
+    "envelope": {
+      "attack": 0.01,
+      "decay": 0.3,
+      "sustain": 0.5,
+      "release": 0.2
+    },
+    "vibrato": {
+      "rate": 8,
+      "depth": 15
+    }
+  }
+}

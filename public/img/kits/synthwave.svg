@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="175" viewBox="0 0 280 175">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#8e44ad"/><stop offset="100%" style="stop-color:#e91e63"/></linearGradient></defs>
+  <rect width="280" height="175" fill="url(#g)"/>
+  <text x="140" y="80" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-family="monospace" font-size="22" font-weight="bold">SYNTHWAVE</text>
+  <text x="140" y="110" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="14">Retro Future</text>
+  <line x1="20" y1="150" x2="260" y2="150" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <line x1="60" y1="155" x2="220" y2="155" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+</svg>

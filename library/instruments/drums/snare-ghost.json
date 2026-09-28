@@ -1,0 +1,35 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Ghost Snare",
+  "category": "drums",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "noise",
+    "dutyCycle": 0.5,
+    "volume": 0.2,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "bandpass",
+    "filterCutoff": 1000,
+    "filterQ": 2,
+    "envelope": {
+      "attack": 0.01,
+      "decay": 0.3,
+      "sustain": 0,
+      "release": 0.5
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "reverbMix": 0.5,
+      "reverbDecay": 0.8
+    }
+  }
+}

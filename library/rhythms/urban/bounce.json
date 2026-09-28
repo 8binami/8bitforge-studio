@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Bounce",
+  "category": "urban",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "New Orleans bounce with call-response feel",
+    "variants": {
+      "base": {
+        "kick": "x...x.x.x...x.x.",
+        "snare": "..x.......x.....",
+        "hihat": "x.x.x.x.x.x.x.x."
+      },
+      "variation": {
+        "kick": "x...x.x.x.x.x.x.",
+        "snare": "..x..x....x.....",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      },
+      "fill": {
+        "kick": "x...x.x.x...xxxx",
+        "snare": "..x.......x.xxxx",
+        "hihat": "x.x.x.x.x.x....."
+      }
+    }
+  }
+}

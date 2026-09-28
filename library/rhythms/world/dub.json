@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Dub",
+  "category": "world",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Heavy bass with spacious echo feel",
+    "variants": {
+      "base": {
+        "kick": "x.........x.....",
+        "snare": "....x.......x...",
+        "hihat": "x...x.x.x...x.x."
+      },
+      "variation": {
+        "kick": "x......x..x.....",
+        "snare": "....x....x..x...",
+        "hihat": "x.x.x.x.x...x.x."
+      },
+      "fill": {
+        "kick": "x.........x.....",
+        "snare": "....x.......xxxx",
+        "hihat": "x...x.x.x......."
+      }
+    }
+  }
+}

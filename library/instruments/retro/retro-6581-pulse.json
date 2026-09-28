@@ -1,0 +1,41 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "SID 6581 Pulse",
+  "category": "retro",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "square",
+    "dutyCycle": 0.25,
+    "volume": 0.18,
+    "detune": 0,
+    "pitchEnv": 2,
+    "glide": 0.02,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 2000,
+    "filterQ": 12,
+    "filterEnvAmount": 20,
+    "filterEnvAttack": 0.008,
+    "filterEnvRelease": 0.35,
+    "envelope": {
+      "attack": 0.004,
+      "decay": 0.18,
+      "sustain": 0.65,
+      "release": 0.12
+    },
+    "vibrato": {
+      "rate": 4,
+      "depth": 10
+    },
+    "fx": {
+      "crushBits": 8,
+      "crushRate": 1,
+      "chorusRate": 1.5,
+      "chorusDepth": 0.1,
+      "chorusMix": 0.12
+    }
+  }
+}

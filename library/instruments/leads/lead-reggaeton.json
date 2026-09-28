@@ -1,0 +1,41 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Reggaeton Lead",
+  "category": "leads",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.19,
+    "detune": 10,
+    "pitchEnv": 0,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 5000,
+    "filterQ": 4,
+    "filterEnvAmount": 12,
+    "filterEnvAttack": 0.005,
+    "filterEnvRelease": 0.2,
+    "unisonVoices": 3,
+    "unisonDetune": 20,
+    "unisonSpread": 50,
+    "envelope": {
+      "attack": 0.005,
+      "decay": 0.15,
+      "sustain": 0.7,
+      "release": 0.2
+    },
+    "vibrato": {
+      "rate": 3,
+      "depth": 8
+    },
+    "fx": {
+      "distortion": 0.15,
+      "reverbMix": 0.1
+    }
+  }
+}

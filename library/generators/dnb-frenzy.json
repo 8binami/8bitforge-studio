@@ -1,0 +1,24 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "generator-presets",
+  "name": "DnB Frenzy",
+  "category": "dnb",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "genre": "dnb",
+    "mood": "aggressive",
+    "rootKey": "E",
+    "scaleType": "minor",
+    "chaos": 65,
+    "complexity": 70,
+    "density": 75,
+    "swing": 5,
+    "humanize": 5,
+    "octaveMin": 2,
+    "octaveMax": 5,
+    "phraseLength": 16,
+    "seed": 0
+  }
+}

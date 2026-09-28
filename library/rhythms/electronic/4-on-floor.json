@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "4-on-Floor",
+  "category": "electronic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Kick on every beat, sixteenth-note hi-hat, snare on 2 and 4",
+    "variants": {
+      "base": {
+        "kick": "x...x...x...x...x...x...x...x...",
+        "snare": "....x.......x.......x.......x...",
+        "hihat": "x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x."
+      },
+      "variation": {
+        "kick": "x...x.x.x...x...x...x...x...x...",
+        "snare": "....x.....x.x.......x.......x...",
+        "hihat": "xxx.xxx.xxx.xxx.x.x.x.x.x.x.x.x."
+      },
+      "fill": {
+        "kick": "x...x...x...x...x...x...x...x...",
+        "snare": "....x.......xxxx....x.......x...",
+        "hihat": "x.x.x.x.x.x....................."
+      }
+    }
+  }
+}

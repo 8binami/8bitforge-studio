@@ -1,0 +1,24 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "generator-presets",
+  "name": "Victory March",
+  "category": "chiptune",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "genre": "chiptune",
+    "mood": "triumphant",
+    "rootKey": "G",
+    "scaleType": "major",
+    "chaos": 35,
+    "complexity": 60,
+    "density": 65,
+    "swing": 0,
+    "humanize": 0,
+    "octaveMin": 3,
+    "octaveMax": 5,
+    "phraseLength": 8,
+    "seed": 0
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Bass Rumble",
+  "category": "bass",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sine",
+    "dutyCycle": 0.5,
+    "volume": 0.25,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0.4,
+    "octaveOffset": -2,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 200,
+    "filterQ": 2,
+    "filterLfoRate": 0.1,
+    "filterLfoDepth": 30,
+    "envelope": {
+      "attack": 0.5,
+      "decay": 0.5,
+      "sustain": 0.9,
+      "release": 2
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "reverbMix": 0.4
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Disco",
+  "category": "classic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Four-on-the-floor with an open hi-hat on the offbeat",
+    "variants": {
+      "base": {
+        "kick": "x...x...x...x...x...x...x...x...",
+        "snare": "....x.......x...................",
+        "hihat": "xxxxxxxxxxxxxxxx................"
+      },
+      "variation": {
+        "kick": "x...x.x.x...x...x...x...x...x...",
+        "snare": "....x.....x.x...................",
+        "hihat": "xxxxxxxxxxxxxxxx................"
+      },
+      "fill": {
+        "kick": "x...x...x.......",
+        "snare": "....x.......xxxx",
+        "hihat": "xxxxxxxxxxxx...."
+      }
+    }
+  }
+}

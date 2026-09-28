@@ -1,0 +1,27 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Stab",
+  "category": "chords",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "square",
+    "dutyCycle": 0.5,
+    "volume": 0.21,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0,
+    "envelope": {
+      "attack": 0.005,
+      "decay": 0.3,
+      "sustain": 0.2,
+      "release": 0.2
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    }
+  }
+}

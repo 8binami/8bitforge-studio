@@ -1,0 +1,37 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "SN76489 Arpeggio",
+  "category": "retro",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "square",
+    "dutyCycle": 0.5,
+    "volume": 0.15,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.04,
+      "sustain": 0.5,
+      "release": 0.04
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "crushBits": 4,
+      "crushRate": 1
+    },
+    "arp": {
+      "mode": "up",
+      "rate": "1/32",
+      "octaves": 2,
+      "gate": 0.6
+    }
+  }
+}

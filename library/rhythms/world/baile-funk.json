@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Baile Funk",
+  "category": "world",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Brazilian favela funk beat",
+    "variants": {
+      "base": {
+        "kick": "x..xx...x..xx...",
+        "snare": "..x...x...x...x.",
+        "hihat": "x.x.x.x.x.x.x.x."
+      },
+      "variation": {
+        "kick": "x..xx..xx..xx...",
+        "snare": "..x...x...x...x.",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      },
+      "fill": {
+        "kick": "x..xx...x..xxxxx",
+        "snare": "..x...x...x.xxxx",
+        "hihat": "x.x.x.x.x.x....."
+      }
+    }
+  }
+}

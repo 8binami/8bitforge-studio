@@ -1,0 +1,39 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Sega FM Lead",
+  "category": "retro",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.18,
+    "detune": 12,
+    "pitchEnv": 0,
+    "glide": 0,
+    "unisonVoices": 2,
+    "unisonDetune": 15,
+    "unisonSpread": 30,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 5000,
+    "filterQ": 3,
+    "envelope": {
+      "attack": 0.005,
+      "decay": 0.15,
+      "sustain": 0.65,
+      "release": 0.15
+    },
+    "vibrato": {
+      "rate": 5,
+      "depth": 6
+    },
+    "fx": {
+      "chorusRate": 2,
+      "chorusDepth": 0.2,
+      "chorusMix": 0.15
+    }
+  }
+}

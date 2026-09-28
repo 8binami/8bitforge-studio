@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Rock",
+  "category": "classic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Standard 4/4 rock beat",
+    "variants": {
+      "base": {
+        "kick": "x.......x.......",
+        "snare": "....x.......x...",
+        "hihat": "x.x.x.x.x.x.x.x."
+      },
+      "variation": {
+        "kick": "x.....x.x.......",
+        "snare": "....x.......x...",
+        "hihat": "x.xxx.x.x.xxx.x."
+      },
+      "fill": {
+        "kick": "x.......x.......",
+        "snare": "....x.......xxxx",
+        "hihat": "x.x.x.x.x.x....."
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "generator-presets",
+  "name": "Ambient Dreams",
+  "category": "ambient",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "genre": "ambient",
+    "mood": "atmospheric",
+    "rootKey": "G",
+    "scaleType": "pentatonic_minor",
+    "chaos": 45,
+    "complexity": 30,
+    "density": 20,
+    "swing": 15,
+    "humanize": 20,
+    "octaveMin": 3,
+    "octaveMax": 5,
+    "phraseLength": 8,
+    "seed": 0
+  }
+}

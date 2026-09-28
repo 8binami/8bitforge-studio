@@ -1,0 +1,32 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "AY-3 Tone C Bass",
+  "category": "retro",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "square",
+    "dutyCycle": 0.5,
+    "volume": 0.2,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0,
+    "octaveOffset": -1,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.06,
+      "sustain": 0.8,
+      "release": 0.04
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "crushBits": 4,
+      "crushRate": 1
+    }
+  }
+}

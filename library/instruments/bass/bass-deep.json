@@ -1,0 +1,31 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Deep Bass",
+  "category": "bass",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sine",
+    "dutyCycle": 0.5,
+    "volume": 0.3,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0.1,
+    "octaveOffset": -1,
+    "unisonVoices": 2,
+    "unisonDetune": 8,
+    "unisonSpread": 20,
+    "envelope": {
+      "attack": 0.02,
+      "decay": 0.3,
+      "sustain": 0.85,
+      "release": 0.15
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    }
+  }
+}

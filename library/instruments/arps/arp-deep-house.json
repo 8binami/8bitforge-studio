@@ -1,0 +1,43 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Deep House Arp",
+  "category": "arps",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sine",
+    "dutyCycle": 0.5,
+    "volume": 0.15,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0.05,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 3500,
+    "filterQ": 1.5,
+    "envelope": {
+      "attack": 0.02,
+      "decay": 0.3,
+      "sustain": 0.4,
+      "release": 0.4
+    },
+    "vibrato": {
+      "rate": 2,
+      "depth": 6
+    },
+    "fx": {
+      "delayTime": 0.25,
+      "delayFeedback": 0.35,
+      "delayMix": 0.25,
+      "reverbMix": 0.2
+    },
+    "arp": {
+      "mode": "up",
+      "rate": "1/8",
+      "octaves": 2,
+      "gate": 0.8
+    }
+  }
+}

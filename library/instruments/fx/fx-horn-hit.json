@@ -1,0 +1,40 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Horn Hit",
+  "category": "fx",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.22,
+    "detune": 8,
+    "pitchEnv": 0,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 3000,
+    "filterQ": 3,
+    "filterEnvAmount": 10,
+    "filterEnvAttack": 0.005,
+    "filterEnvRelease": 0.2,
+    "unisonVoices": 3,
+    "unisonDetune": 15,
+    "unisonSpread": 40,
+    "envelope": {
+      "attack": 0.01,
+      "decay": 0.2,
+      "sustain": 0.6,
+      "release": 0.3
+    },
+    "vibrato": {
+      "rate": 4,
+      "depth": 8
+    },
+    "fx": {
+      "distortion": 0.1
+    }
+  }
+}

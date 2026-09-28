@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Psytrance",
+  "category": "electronic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Driving 4/4 with 16th-note bassline feel",
+    "variants": {
+      "base": {
+        "kick": "x...x...x...x...",
+        "snare": "....x.......x...",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      },
+      "variation": {
+        "kick": "x.x.x...x...x...",
+        "snare": "....x.....x.x...",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      },
+      "fill": {
+        "kick": "x...x...x...xxxx",
+        "snare": "....x.......xxxx",
+        "hihat": "xxxxxxxxxxxx...."
+      }
+    }
+  }
+}

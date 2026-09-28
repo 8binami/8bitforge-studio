@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="175" viewBox="0 0 280 175">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#00b09b"/><stop offset="100%" style="stop-color:#96c93d"/></linearGradient></defs>
+  <rect width="280" height="175" fill="url(#g)"/>
+  <text x="140" y="80" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="monospace" font-size="24" font-weight="bold">TROPICAL</text>
+  <text x="140" y="108" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="13">Steel Drum · Caribbean</text>
+  <path d="M30,165 Q50,130 70,155 Q90,175 110,150 Q130,125 150,155 Q170,175 190,145 Q210,118 230,150 Q245,168 260,148" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="none"/>
+  <circle cx="70"  cy="155" r="3" fill="rgba(255,255,255,0.4)"/>
+  <circle cx="150" cy="155" r="3" fill="rgba(255,255,255,0.4)"/>
+  <circle cx="230" cy="150" r="3" fill="rgba(255,255,255,0.4)"/>
+</svg>

@@ -1,0 +1,36 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "AY-3 Buzz FX",
+  "category": "fx",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "square",
+    "dutyCycle": 0.5,
+    "volume": 0.17,
+    "detune": 0,
+    "pitchEnv": -12,
+    "glide": 0.2,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 6000,
+    "filterQ": 2,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.4,
+      "sustain": 0,
+      "release": 0.2
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "crushBits": 4,
+      "crushRate": 1,
+      "distortion": 0.25
+    }
+  }
+}

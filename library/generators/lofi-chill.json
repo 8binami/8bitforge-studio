@@ -1,0 +1,24 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "generator-presets",
+  "name": "Lo-Fi Chill",
+  "category": "lofi",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "genre": "lofi",
+    "mood": "peaceful",
+    "rootKey": "F",
+    "scaleType": "pentatonic_major",
+    "chaos": 25,
+    "complexity": 35,
+    "density": 30,
+    "swing": 20,
+    "humanize": 15,
+    "octaveMin": 3,
+    "octaveMax": 4,
+    "phraseLength": 8,
+    "seed": 0
+  }
+}

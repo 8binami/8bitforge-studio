@@ -1,0 +1,40 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Electric Piano 2",
+  "category": "acoustic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "volume": 0.21,
+    "filterCutoff": 460.0002729632114,
+    "filterQ": 17.695,
+    "filterEnabled": true,
+    "filterKeyTrack": 0.4,
+    "filterLfoRate": 7.298022943617281,
+    "filterLfoDepth": 18.07692307692308,
+    "filterEnvAmount": 8,
+    "filterEnvAttack": 0.7036043,
+    "filterEnvRelease": 0.3769230769230769,
+    "unisonVoices": 4,
+    "phase": 360,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.4,
+      "sustain": 0.3,
+      "release": 0.4
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "delayFeedback": 0.3,
+      "reverbMix": 0.2,
+      "chorusRate": 0.1,
+      "chorusDepth": 0.16
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "House Lead",
+  "category": "leads",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.18,
+    "detune": 8,
+    "pitchEnv": 0,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 4500,
+    "filterQ": 3,
+    "filterEnvAmount": 14,
+    "filterEnvAttack": 0.005,
+    "filterEnvRelease": 0.3,
+    "unisonVoices": 2,
+    "unisonDetune": 15,
+    "unisonSpread": 40,
+    "envelope": {
+      "attack": 0.01,
+      "decay": 0.2,
+      "sustain": 0.7,
+      "release": 0.25
+    },
+    "vibrato": {
+      "rate": 4,
+      "depth": 6
+    },
+    "fx": {
+      "chorusRate": 0.8,
+      "chorusDepth": 0.3,
+      "chorusMix": 0.2,
+      "reverbMix": 0.1
+    }
+  }
+}

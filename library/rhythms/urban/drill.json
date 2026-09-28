@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Drill",
+  "category": "urban",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Sliding hi-hats over a syncopated kick",
+    "variants": {
+      "base": {
+        "kick": "x....x..x..x....",
+        "snare": "....x.......x...",
+        "hihat": "xxx.xxx.xxx.xxx."
+      },
+      "variation": {
+        "kick": "x..x.x..x..x....",
+        "snare": "....x.......x...",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      },
+      "fill": {
+        "kick": "x....x..x..x....",
+        "snare": "....x.......xxxx",
+        "hihat": "xxx.xxx.xxx.xxxx"
+      }
+    }
+  }
+}

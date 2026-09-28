@@ -1,0 +1,40 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "House Stab",
+  "category": "chords",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.2,
+    "detune": 12,
+    "pitchEnv": 0,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 3000,
+    "filterQ": 5,
+    "filterEnvAmount": 16,
+    "filterEnvAttack": 0.001,
+    "filterEnvRelease": 0.15,
+    "unisonVoices": 3,
+    "unisonDetune": 20,
+    "unisonSpread": 50,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.2,
+      "sustain": 0,
+      "release": 0.15
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "reverbMix": 0.15
+    }
+  }
+}

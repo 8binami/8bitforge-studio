@@ -1,0 +1,37 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Piano Chord",
+  "category": "acoustic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "triangle",
+    "dutyCycle": 0.5,
+    "volume": 0.17,
+    "detune": 3,
+    "pitchEnv": 0,
+    "glide": 0,
+    "unisonVoices": 2,
+    "unisonDetune": 8,
+    "unisonSpread": 30,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 6000,
+    "filterQ": 0.5,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.5,
+      "sustain": 0.3,
+      "release": 0.7
+    },
+    "vibrato": {
+      "rate": 2,
+      "depth": 4
+    },
+    "fx": {
+      "reverbMix": 0.25
+    }
+  }
+}

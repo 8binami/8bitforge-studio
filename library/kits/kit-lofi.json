@@ -1,0 +1,45 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "kits",
+  "name": "Lofi Hip-Hop",
+  "category": "ambient",
+  "tags": [],
+  "cover": "img/kits/lofi.svg",
+  "data": {
+    "tracks": [
+      {
+        "presetKey": "lead-lofi",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "pad-lofi",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "bass-lofi",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "arp-lofi",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "kick-lofi",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "snare-lofi",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "hat-lofi",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "fx-vinyl",
+        "presetType": "builtin"
+      }
+    ]
+  }
+}

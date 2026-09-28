@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Phonk",
+  "category": "urban",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Dark Memphis-style cowbell bounce",
+    "variants": {
+      "base": {
+        "kick": "x...x...x...x...",
+        "snare": "....x.......x...",
+        "hihat": "x.xxx.xxx.xxx.xx"
+      },
+      "variation": {
+        "kick": "x..xx...x..xx...",
+        "snare": "....x.......x...",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      },
+      "fill": {
+        "kick": "x...x...x.......",
+        "snare": "....x.......xxxx",
+        "hihat": "x.xxx.xxx.xxxxxx"
+      }
+    }
+  }
+}

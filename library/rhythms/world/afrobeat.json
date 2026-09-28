@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Afrobeat",
+  "category": "world",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "West African polyrhythm",
+    "variants": {
+      "base": {
+        "kick": "x..x..x...x.x...",
+        "snare": "....x...x.....x.",
+        "hihat": "xx.xx.xx.xx.xx.x"
+      },
+      "variation": {
+        "kick": "x..x.xx...x.x...",
+        "snare": "....x...x..x..x.",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      },
+      "fill": {
+        "kick": "x..x..x...x.xxxx",
+        "snare": "....x...x...xxxx",
+        "hihat": "xx.xx.xx.xx....."
+      }
+    }
+  }
+}

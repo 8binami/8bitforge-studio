@@ -1,0 +1,28 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Dakito Bass",
+  "category": "bass",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "triangle",
+    "volume": 0.27,
+    "octaveOffset": 1,
+    "semitoneOffset": -6,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.1,
+      "sustain": 0.9,
+      "release": 0.05
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "delayFeedback": 0.3
+    }
+  }
+}

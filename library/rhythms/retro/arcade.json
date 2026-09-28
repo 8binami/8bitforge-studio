@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Arcade",
+  "category": "retro",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Fast, playful arcade groove",
+    "variants": {
+      "base": {
+        "kick": "x...x...x...x...",
+        "snare": "..x...x...x...x.",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      },
+      "variation": {
+        "kick": "x..xx...x..xx...",
+        "snare": "..x...x.x.x...x.",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      },
+      "fill": {
+        "kick": "x...x...x...xxxx",
+        "snare": "..x...x...x.xxxx",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      }
+    }
+  }
+}

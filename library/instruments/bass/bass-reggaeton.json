@@ -1,0 +1,35 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Reggaeton Bass",
+  "category": "bass",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sine",
+    "dutyCycle": 0.5,
+    "volume": 0.35,
+    "detune": 0,
+    "pitchEnv": 10,
+    "glide": 0.04,
+    "octaveOffset": -1,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 700,
+    "filterQ": 6,
+    "filterEnvAmount": 14,
+    "filterEnvAttack": 0.001,
+    "filterEnvRelease": 0.15,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.2,
+      "sustain": 0.6,
+      "release": 0.1
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    }
+  }
+}

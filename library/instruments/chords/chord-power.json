@@ -1,0 +1,37 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Power Chord",
+  "category": "chords",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.19,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0,
+    "unisonVoices": 6,
+    "unisonDetune": 30,
+    "unisonSpread": 70,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 4000,
+    "filterQ": 2,
+    "envelope": {
+      "attack": 0.01,
+      "decay": 0.2,
+      "sustain": 0.8,
+      "release": 0.3
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "distortion": 0.4
+    }
+  }
+}

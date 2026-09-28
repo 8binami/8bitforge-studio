@@ -1,0 +1,42 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Ice Pad",
+  "category": "pads",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.12,
+    "detune": 10,
+    "pitchEnv": 0,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "bandpass",
+    "filterCutoff": 3000,
+    "filterQ": 6,
+    "filterLfoRate": 0.2,
+    "filterLfoDepth": 50,
+    "unisonVoices": 4,
+    "unisonDetune": 30,
+    "unisonSpread": 70,
+    "envelope": {
+      "attack": 0.8,
+      "decay": 0.3,
+      "sustain": 0.75,
+      "release": 1.5
+    },
+    "vibrato": {
+      "rate": 2,
+      "depth": 3
+    },
+    "fx": {
+      "delayTime": 0.4,
+      "delayFeedback": 0.4,
+      "delayMix": 0.25,
+      "reverbMix": 0.4
+    }
+  }
+}

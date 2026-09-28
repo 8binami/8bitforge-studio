@@ -1,0 +1,162 @@
+[
+    {
+        "id": "aurora-run",
+        "name": "Aurora Run",
+        "category": "platformer",
+        "bpm": 150,
+        "steps": 16,
+        "description": "Two NES pulses and a C64 arp over a driving kit, in A minor"
+    },
+    {
+        "id": "canopy-whispers",
+        "name": "Canopy Whispers",
+        "category": "ambient",
+        "bpm": 100,
+        "steps": 16,
+        "description": "Light through the leaves: warm pads, harp and flute in D major with a whisper of percussion (IOII3)"
+    },
+    {
+        "id": "cave-light",
+        "name": "Cave Light",
+        "category": "ambient",
+        "bpm": 72,
+        "steps": 16,
+        "description": "A C418-style lullaby, broken-chord piano and harp in C major, no drums"
+    },
+    {
+        "id": "coco-adventure",
+        "name": "Coco Adventure",
+        "category": "ambient",
+        "bpm": 96,
+        "steps": 16,
+        "description": "A sunlit adventure in A major, marimba and flute over a soft shuffle kit (Dakito)"
+    },
+    {
+        "id": "crypt-sovereign",
+        "name": "Crypt Sovereign",
+        "category": "rpg",
+        "bpm": 148,
+        "steps": 32,
+        "description": "A boss march in D harmonic minor, SID leads over 909 drums, 32-step bars"
+    },
+    {
+        "id": "deep-slate",
+        "name": "Deep Slate",
+        "category": "ambient",
+        "bpm": 60,
+        "steps": 16,
+        "description": "Underground C418 gloom in A minor, low drones and a soft heartbeat pulse"
+    },
+    {
+        "id": "destiny",
+        "name": "Destiny",
+        "category": "custom",
+        "bpm": 124,
+        "steps": 16,
+        "description": "A heroic anthem in E minor, twin pulses and a rising arp over a full kit (IOII3)"
+    },
+    {
+        "id": "drifting-blocks",
+        "name": "Drifting Blocks",
+        "category": "ambient",
+        "bpm": 66,
+        "steps": 16,
+        "description": "Floating music-box arpeggios in F lydian, that bright raised-fourth Minecraft shimmer"
+    },
+    {
+        "id": "dusk-cassette",
+        "name": "Dusk Cassette",
+        "category": "ambient",
+        "bpm": 76,
+        "steps": 16,
+        "description": "Slow lofi hip-hop, jazzy sevenths and swung boom-bap in F major"
+    },
+    {
+        "id": "glass-ocean",
+        "name": "Glass Ocean",
+        "category": "ambient",
+        "bpm": 94,
+        "steps": 32,
+        "description": "A weightless whole-tone dreamscape, glass keys and harp with no gravity to pull them home"
+    },
+    {
+        "id": "koi-pond",
+        "name": "Koi Pond",
+        "category": "ambient",
+        "bpm": 88,
+        "steps": 16,
+        "description": "A calm koto piece in the hirajoshi scale, marimba and bells over a soft pulse"
+    },
+    {
+        "id": "market-of-fez",
+        "name": "Market of Fez",
+        "category": "custom",
+        "bpm": 108,
+        "steps": 32,
+        "description": "An exotic bazaar groove in E phrygian dominant, SID snake-charmer lead over hand percussion"
+    },
+    {
+        "id": "mini-game",
+        "name": "Mini Game",
+        "category": "custom",
+        "bpm": 150,
+        "steps": 16,
+        "description": "Quick and quirky: a bouncy pulse tune in G major with a clacky kit (IOII3)"
+    },
+    {
+        "id": "neon-circuit",
+        "name": "Neon Circuit",
+        "category": "racing",
+        "bpm": 140,
+        "steps": 16,
+        "description": "Synthwave night drive, four-on-the-floor and a trance arp in F sharp minor"
+    },
+    {
+        "id": "pipe-maze",
+        "name": "Pipe Maze",
+        "category": "platformer",
+        "bpm": 150,
+        "steps": 16,
+        "description": "The underground creep: sparse staccato pulses descending in C phrygian, lots of space"
+    },
+    {
+        "id": "pixel-rush",
+        "name": "Pixel Rush",
+        "category": "action",
+        "bpm": 168,
+        "steps": 16,
+        "description": "Pure NES chiptune flat out, twin pulses and a running arp in C major"
+    },
+    {
+        "id": "premiere",
+        "name": "Première",
+        "category": "custom",
+        "bpm": 120,
+        "steps": 16,
+        "description": "Three patterns in G major, a pulse lead answered by a running sequence over an NES kit (Dakito)"
+    },
+    {
+        "id": "shade-io",
+        "name": "Shade IO",
+        "category": "custom",
+        "bpm": 100,
+        "steps": 16,
+        "description": "A shadowy lofi groove in C minor, dusty keys and pluck over a boom-bap kit (Dakito)"
+    },
+    {
+        "id": "slow-orbit",
+        "name": "Slow Orbit",
+        "category": "ambient",
+        "bpm": 55,
+        "steps": 16,
+        "description": "Deep-space drift in A minor at 55 BPM, drones and distant bells around a slow pulse (Dakito)"
+    },
+    {
+        "id": "voidwalker",
+        "name": "Voidwalker",
+        "category": "custom",
+        "bpm": 128,
+        "steps": 32,
+        "description": "Hypnotic dark techno, a rolling acid line and four-on-the-floor in A minor"
+    }
+]

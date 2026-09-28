@@ -1,0 +1,47 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Piano Eterna",
+  "category": "acoustic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "volume": 0.35,
+    "filterCutoff": 550.6352631814251,
+    "filterQ": 18.615,
+    "filterEnabled": true,
+    "filterKeyTrack": 0.4,
+    "filterEnvAttack": 0.001,
+    "filterEnvRelease": 0.5,
+    "unisonVoices": 3,
+    "phase": 360,
+    "lfo1Wave": "sawtooth",
+    "lfo1Sync": true,
+    "lfo1Delay": 1.43,
+    "lfo2Wave": "triangle",
+    "lfo2Sync": true,
+    "lfo2Delay": 0.95,
+    "lfo3Wave": "square",
+    "lfo3Sync": true,
+    "lfo3Delay": 1.58,
+    "envelope": {
+      "attack": 0,
+      "decay": 0.4,
+      "sustain": 0.3,
+      "release": 0.4
+    },
+    "vibrato": {
+      "rate": 6.7,
+      "depth": 0
+    },
+    "fx": {
+      "delayFeedback": 0.25,
+      "delayMix": 0.2,
+      "reverbMix": 0.3,
+      "chorusRate": 0.1,
+      "chorusDepth": 0.11000000328446428
+    }
+  }
+}

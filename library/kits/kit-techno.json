@@ -1,0 +1,45 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "kits",
+  "name": "Techno",
+  "category": "synth",
+  "tags": [],
+  "cover": "img/kits/techno.svg",
+  "data": {
+    "tracks": [
+      {
+        "presetKey": "lead-techno",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "pad-techno",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "bass-techno",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "arp-techno",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "kick-techno",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "snare-techno",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "hat-techno",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "fx-industrial",
+        "presetType": "builtin"
+      }
+    ]
+  }
+}

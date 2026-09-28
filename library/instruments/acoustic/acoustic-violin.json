@@ -1,0 +1,41 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Violin",
+  "category": "acoustic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.17,
+    "detune": 3,
+    "pitchEnv": 0,
+    "glide": 0.08,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 3000,
+    "filterQ": 2,
+    "filterKeyTrack": 0.6,
+    "tremoloRate": 5,
+    "tremoloDepth": 12,
+    "lfo1Delay": 0.5,
+    "envelope": {
+      "attack": 0.15,
+      "decay": 0.2,
+      "sustain": 0.85,
+      "release": 0.3
+    },
+    "vibrato": {
+      "rate": 5.5,
+      "depth": 10
+    },
+    "fx": {
+      "reverbMix": 0.25,
+      "chorusRate": 2,
+      "chorusDepth": 0.2,
+      "chorusMix": 0.15
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Acid Arp",
+  "category": "arps",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.19,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0.06,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 600,
+    "filterQ": 15,
+    "filterEnvAmount": 22,
+    "filterEnvAttack": 0.001,
+    "filterEnvRelease": 0.12,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.15,
+      "sustain": 0.3,
+      "release": 0.08
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "distortion": 0.3
+    },
+    "arp": {
+      "mode": "up",
+      "rate": "1/16",
+      "octaves": 1,
+      "gate": 0.5
+    }
+  }
+}

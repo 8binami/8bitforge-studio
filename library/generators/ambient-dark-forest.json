@@ -1,0 +1,24 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "generator-presets",
+  "name": "Ambient Dark Forest",
+  "category": "ambient",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "chaos": 50,
+    "complexity": 50,
+    "density": 50,
+    "swing": 0,
+    "humanize": 74,
+    "octaveMin": 3,
+    "octaveMax": 4,
+    "rootKey": "D#",
+    "scaleType": "hirajoshi",
+    "genre": "ambient",
+    "mood": "dark",
+    "phraseLength": 16,
+    "seed": 0
+  }
+}

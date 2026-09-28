@@ -1,0 +1,37 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Harp",
+  "category": "acoustic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sine",
+    "dutyCycle": 0.5,
+    "volume": 0.18,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 6000,
+    "filterQ": 1,
+    "filterEnvAmount": 6,
+    "filterEnvAttack": 0.001,
+    "filterEnvRelease": 0.6,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.5,
+      "sustain": 0.15,
+      "release": 0.8
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "reverbMix": 0.35
+    }
+  }
+}

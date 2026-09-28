@@ -1,0 +1,28 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "LEAD Preset",
+  "category": "leads",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sine",
+    "volume": 0.48,
+    "pitchEnv": 36,
+    "unisonDetune": 42,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.35,
+      "sustain": 0,
+      "release": 0.02
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "delayFeedback": 0.3
+    }
+  }
+}

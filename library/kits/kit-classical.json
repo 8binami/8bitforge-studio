@@ -1,0 +1,45 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "kits",
+  "name": "Classical Piano",
+  "category": "acoustic",
+  "tags": [],
+  "cover": "img/kits/classical.svg",
+  "data": {
+    "tracks": [
+      {
+        "presetKey": "piano-lead",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "piano-chord",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "piano-bass",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "piano-arp",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "perc-soft-kick",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "snare-brush",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "hat-triangle-bell",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "fx-harp-gliss",
+        "presetType": "builtin"
+      }
+    ]
+  }
+}

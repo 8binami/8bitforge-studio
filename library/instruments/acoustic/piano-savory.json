@@ -1,0 +1,38 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Piano Savory",
+  "category": "acoustic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "volume": 0.35,
+    "filterCutoff": 659.1283,
+    "filterQ": 19.765,
+    "filterEnabled": true,
+    "filterKeyTrack": 0.4,
+    "filterEnvAmount": 8,
+    "filterEnvAttack": 0.001,
+    "filterEnvRelease": 0.5,
+    "unisonVoices": 4,
+    "phase": 360,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.4,
+      "sustain": 0.3,
+      "release": 0.4
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "delayFeedback": 0.3,
+      "reverbMix": 0.2,
+      "chorusRate": 0.1,
+      "chorusDepth": 0.16
+    }
+  }
+}

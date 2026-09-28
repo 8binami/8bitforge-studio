@@ -1,0 +1,40 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Dark Techno Pad",
+  "category": "pads",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.13,
+    "detune": 20,
+    "pitchEnv": 0,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 800,
+    "filterQ": 4,
+    "filterLfoRate": 0.15,
+    "filterLfoDepth": 30,
+    "unisonVoices": 4,
+    "unisonDetune": 30,
+    "unisonSpread": 80,
+    "envelope": {
+      "attack": 0.3,
+      "decay": 0.5,
+      "sustain": 0.7,
+      "release": 1
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "reverbMix": 0.35,
+      "distortion": 0.1
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Deep House Bass",
+  "category": "bass",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sine",
+    "dutyCycle": 0.5,
+    "volume": 0.33,
+    "detune": 0,
+    "pitchEnv": 4,
+    "glide": 0.2,
+    "octaveOffset": -1,
+    "envelope": {
+      "attack": 0.02,
+      "decay": 0.4,
+      "sustain": 0.8,
+      "release": 0.2
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "reverbMix": 0.08
+    }
+  }
+}

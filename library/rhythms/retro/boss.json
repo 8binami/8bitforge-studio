@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Boss Fight",
+  "category": "retro",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Intense, driving boss fight",
+    "variants": {
+      "base": {
+        "kick": "x.x.x.x.x.x.x.x.",
+        "snare": "....x.x.....x.x.",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      },
+      "variation": {
+        "kick": "xxx.x.x.xxx.x.x.",
+        "snare": "....x.x.x...x.x.",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      },
+      "fill": {
+        "kick": "x.x.x.x.x.x.xxxx",
+        "snare": "....x.x.....xxxx",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      }
+    }
+  }
+}

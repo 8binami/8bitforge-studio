@@ -1,0 +1,35 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "POKEY HiHat",
+  "category": "drums",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "noise",
+    "dutyCycle": 0.5,
+    "volume": 0.21,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "highpass",
+    "filterCutoff": 4500,
+    "filterQ": 0.7,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.035,
+      "sustain": 0,
+      "release": 0.015
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "crushBits": 4,
+      "crushRate": 1
+    }
+  }
+}

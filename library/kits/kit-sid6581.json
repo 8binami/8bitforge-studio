@@ -1,0 +1,45 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "kits",
+  "name": "SID 6581 (C64)",
+  "category": "retro",
+  "tags": [],
+  "cover": "img/kits/sid6581.svg",
+  "data": {
+    "tracks": [
+      {
+        "presetKey": "retro-6581-pulse",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "retro-6581-sync",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "retro-6581-bass",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "retro-6581-arp",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "kick-6581",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "snare-6581",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "hat-6581",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "fx-6581-noise",
+        "presetType": "builtin"
+      }
+    ]
+  }
+}

@@ -1,0 +1,106 @@
+appId: com.8binami.8bitforge.studio
+productName: 8BitForge Studio
+copyright: Copyright © 2026 8Binami
+
+directories:
+  output: release
+  buildResources: apps/desktop/resources
+
+# Only the shell and the built renderer ship; sources stay out of the package.
+# The renderer's packages are already bundled into dist/web and the shell only
+# needs Electron and Node, so no node_modules goes in either.
+files:
+  - apps/desktop/main.js
+  - apps/desktop/preload.cjs
+  - apps/desktop/resources/icons/512x512.png
+  - dist/web/**/*
+  - package.json
+  - "!node_modules/**/*"
+  - "!dist/web/**/*.map"
+
+asar: true
+# The shell has no native module to rebuild for Electron (see files above).
+npmRebuild: false
+
+# The names the download page and the CDN already use since 1.0:
+# 8BitForge-<version>-win-x64.exe, -portable-win.exe, -linux-x86_64.AppImage,
+# -linux-amd64.deb, -mac-arm64.dmg. The portable needs its own, or it would
+# overwrite the installer of the same name.
+artifactName: 8BitForge-${version}-${os}-${arch}.${ext}
+
+fileAssociations:
+  - ext: 8bitforge
+    name: 8BitForge project
+    role: Editor
+
+win:
+  target:
+    - target: nsis
+      arch: [x64]
+    - target: portable
+      arch: [x64]
+
+portable:
+  artifactName: 8BitForge-${version}-portable-win.${ext}
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: 8BitForge Studio
+
+mac:
+  category: public.app-category.music
+  target:
+    - target: dmg
+      arch: [x64, arm64]
+    - target: zip
+      arch: [x64, arm64]
+
+linux:
+  # The name the Linux packages have had since 1.0 (Snap Store: 8bitforge,
+  # deb: 8bitforge), so 2.3.3 updates the installs out there instead of
+  # landing next to them. It names the command and the snap too.
+  executableName: 8bitforge
+  # Every size the icon theme looks in: a lone 1024 px icon lands in
+  # hicolor/1024x1024, a folder GNOME and KDE never search.
+  icon: apps/desktop/resources/icons
+  category: Audio;AudioVideo;Music
+  synopsis: Chiptune and 8-bit music studio
+  maintainer: 8Binami <contact@8binami.com>
+  # the window's WM_CLASS matches the .desktop entry, so the dock links them
+  syncDesktopName: true
+  target:
+    - target: AppImage
+      arch: [x64]
+    - target: deb
+      arch: [x64]
+    - target: snap
+      arch: [x64]
+
+deb:
+  packageName: 8bitforge
+
+# The snap is built by snapcraft on core24 with the GNOME extension, which
+# brings the libraries Electron 44 needs. (The older template build lacks
+# them: "libnspr4.so: cannot open shared object file".) snapcraft builds in an
+# LXD container: sudo snap install snapcraft --classic, sudo snap install lxd,
+# sudo lxd init --auto, and the user in the lxd group.
+snapcraft:
+  base: core24
+  core24:
+    summary: Chiptune and 8-bit music studio
+    grade: stable
+    confinement: strict
+    useLXD: true
+    # The defaults (home, network, sound, OpenGL, desktop), ALSA, which Web
+    # MIDI needs for keyboards and controllers (not connected on its own:
+    # snap connect 8bitforge:alsa), and browser-support without
+    # allow-sandbox. The Store never connects allow-sandbox by itself, so
+    # Chromium runs with --no-sandbox (added by electron-builder), inside the
+    # snap's strict confinement: the app starts with nothing to connect.
+    plugs:
+      - default
+      - alsa
+      - browser-support

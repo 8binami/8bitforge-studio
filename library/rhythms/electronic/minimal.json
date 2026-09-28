@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Minimal",
+  "category": "electronic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Stripped-down minimal techno groove",
+    "variants": {
+      "base": {
+        "kick": "x...x...x...x...",
+        "snare": "....x.......x...",
+        "hihat": "..x...x...x...x."
+      },
+      "variation": {
+        "kick": "x...x...x..xx...",
+        "snare": "....x.......x...",
+        "hihat": "..x...x..xx...x."
+      },
+      "fill": {
+        "kick": "x...x...x.......",
+        "snare": "....x.........x.",
+        "hihat": "..x...x...x.xxxx"
+      }
+    }
+  }
+}

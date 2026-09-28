@@ -1,0 +1,42 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Reggaeton Arp",
+  "category": "arps",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "square",
+    "dutyCycle": 0.5,
+    "volume": 0.15,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 4000,
+    "filterQ": 3,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.1,
+      "sustain": 0.2,
+      "release": 0.1
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "delayTime": 0.1875,
+      "delayFeedback": 0.25,
+      "delayMix": 0.15
+    },
+    "arp": {
+      "mode": "up",
+      "rate": "1/8",
+      "octaves": 2,
+      "gate": 0.5
+    }
+  }
+}

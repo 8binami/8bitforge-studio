@@ -1,0 +1,40 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Deep House Lead",
+  "category": "leads",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.17,
+    "detune": 5,
+    "pitchEnv": 0,
+    "glide": 0.08,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 2000,
+    "filterQ": 2,
+    "unisonVoices": 2,
+    "unisonDetune": 10,
+    "unisonSpread": 50,
+    "envelope": {
+      "attack": 0.08,
+      "decay": 0.3,
+      "sustain": 0.75,
+      "release": 0.5
+    },
+    "vibrato": {
+      "rate": 4,
+      "depth": 8
+    },
+    "fx": {
+      "chorusRate": 0.6,
+      "chorusDepth": 0.5,
+      "chorusMix": 0.3,
+      "reverbMix": 0.25
+    }
+  }
+}

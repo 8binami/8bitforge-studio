@@ -1,0 +1,33 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "LEAD Preset DB",
+  "category": "leads",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "square",
+    "volume": 0.18,
+    "filterCutoff": 4335.5108919960385,
+    "filterQ": 2.668338,
+    "filterEnabled": true,
+    "filterLfoRate": 4.656492782978161,
+    "filterLfoDepth": 10.12822077824519,
+    "filterEnvAttack": 0.08727185,
+    "filterEnvRelease": 1.571795184795673,
+    "envelope": {
+      "attack": 0.01,
+      "decay": 0.08,
+      "sustain": 0.6,
+      "release": 0.15
+    },
+    "vibrato": {
+      "rate": 5,
+      "depth": 8
+    },
+    "fx": {
+      "delayFeedback": 0.3
+    }
+  }
+}

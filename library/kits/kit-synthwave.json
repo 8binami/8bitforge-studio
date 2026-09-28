@@ -1,0 +1,45 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "kits",
+  "name": "Synthwave",
+  "category": "synth",
+  "tags": [],
+  "cover": "img/kits/synthwave.svg",
+  "data": {
+    "tracks": [
+      {
+        "presetKey": "synth-synthwave",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "pad-warm",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "bass-reese",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "arp-trance",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "kick-808",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "snare-clap",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "hat-open",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "fx-sweep",
+        "presetType": "builtin"
+      }
+    ]
+  }
+}

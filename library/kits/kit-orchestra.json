@@ -1,0 +1,45 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "kits",
+  "name": "Orchestra 8-Bit",
+  "category": "acoustic",
+  "tags": [],
+  "cover": "img/kits/orchestra.svg",
+  "data": {
+    "tracks": [
+      {
+        "presetKey": "acoustic-violin",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "acoustic-flute",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "acoustic-cello",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "acoustic-harp",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "perc-tom",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "snare-rim",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "perc-cymbal",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "acoustic-musicbox",
+        "presetType": "builtin"
+      }
+    ]
+  }
+}

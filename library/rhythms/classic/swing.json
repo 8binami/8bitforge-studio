@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Swing",
+  "category": "classic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Big band swing rhythm",
+    "variants": {
+      "base": {
+        "kick": "x.......x.......",
+        "snare": "....x.......x...",
+        "hihat": "x..xx..xx..xx..x"
+      },
+      "variation": {
+        "kick": "x.....x.x.......",
+        "snare": "....x.....x.x...",
+        "hihat": "x..xx.xxx..xx..x"
+      },
+      "fill": {
+        "kick": "x.......x.......",
+        "snare": "....x.......xxxx",
+        "hihat": "x..xx..xx..x...."
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Dakito Closed Hat",
+  "category": "drums",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "noise",
+    "volume": 0.27,
+    "filterCutoff": 6575.270306986086,
+    "filterQ": 1.978338,
+    "filterEnabled": true,
+    "filterLfoRate": 7.376009,
+    "filterLfoDepth": 5.512836,
+    "lfoFilterRate": 5.752349230096114,
+    "lfoFilterDepth": 8.589759,
+    "tremoloRate": 3.194406,
+    "tremoloDepth": 3.974374624399035,
+    "filterEnvAttack": 0.13035925630500508,
+    "filterEnvRelease": 0.5410259540264424,
+    "unisonVoices": 6,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.06,
+      "sustain": 0,
+      "release": 0.01
+    },
+    "vibrato": {
+      "rate": 4.927598,
+      "depth": 3.205144
+    },
+    "fx": {
+      "delayFeedback": 0.3
+    }
+  }
+}

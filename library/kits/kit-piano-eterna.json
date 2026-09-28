@@ -1,0 +1,45 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "kits",
+  "name": "Piano Eterna",
+  "category": "acoustic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "tracks": [
+      {
+        "presetKey": "piano-eterna",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "piano-eterna",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "piano-eterna",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "piano-eterna",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "piano-eterna",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "piano-eterna",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "piano-eterna",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "piano-eterna",
+        "presetType": "builtin"
+      }
+    ]
+  }
+}

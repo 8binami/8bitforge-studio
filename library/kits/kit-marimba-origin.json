@@ -1,0 +1,45 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "kits",
+  "name": "Marimba Origin",
+  "category": "acoustic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "tracks": [
+      {
+        "presetKey": "marimba-origin-wide",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "marimba-origin-wide",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "marimba-origin-wide",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "marimba-origin-wide",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "marimba-origin-wide",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "marimba-origin-wide",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "marimba-origin",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "marimba-origin-wide",
+        "presetType": "builtin"
+      }
+    ]
+  }
+}

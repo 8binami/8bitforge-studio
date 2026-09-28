@@ -1,0 +1,55 @@
+{
+    // Workspace settings for the studio, committed so that everyone working
+    // on it gets the same formatting and the same idea of what the tree is.
+    // Personal preferences belong in your own user settings, not here.
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        // Prettier owns the formatting; the repo's .prettierrc is the source
+        // of truth and the CI check runs the same one.
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit"
+        },
+
+        // The project is ES modules throughout, and .js means .js.
+        "javascript.preferences.importModuleSpecifierEnding": "js",
+        "javascript.format.enable": false,
+
+        // Files that exist but are never worth opening by hand.
+        "files.exclude": {
+            "**/node_modules": true,
+            "dist": true,
+            "release": true,
+            // The commercial theme: present so the app runs, never committed.
+            // See public/README.vendor.md.
+            "public/inspinia": true
+        },
+        // Excluded from search but still visible in the tree: a stray match
+        // in a minified vendor file is never the one you were looking for.
+        "search.exclude": {
+            "**/package-lock.json": true,
+            "public/inspinia/**": true
+        },
+        "files.watcherExclude": {
+            "**/node_modules/**": true,
+            "**/dist/**": true,
+            "**/release/**": true
+        },
+
+        "files.eol": "\n",
+        "files.insertFinalNewline": true,
+        "files.trimTrailingWhitespace": true,
+
+        // The tests are vitest; run them from the terminal, not a plugin that
+        // needs its own configuration.
+        "npm.packageManager": "npm"
+    },
+    "extensions": {
+        "recommendations": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+    }
+}

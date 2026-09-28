@@ -1,0 +1,45 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "kits",
+  "name": "POKEY (Atari 8-bit)",
+  "category": "retro",
+  "tags": [],
+  "cover": "img/kits/pokey.svg",
+  "data": {
+    "tracks": [
+      {
+        "presetKey": "retro-pokey-tone",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "retro-pokey-buzz",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "retro-pokey-bass",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "retro-pokey-arp",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "kick-pokey",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "snare-pokey",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "hat-pokey",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "fx-pokey-dist",
+        "presetType": "builtin"
+      }
+    ]
+  }
+}

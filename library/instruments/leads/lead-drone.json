@@ -1,0 +1,43 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Drone",
+  "category": "leads",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.14,
+    "detune": 30,
+    "pitchEnv": 0,
+    "glide": 0.5,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 1200,
+    "filterQ": 3,
+    "filterLfoRate": 0.08,
+    "filterLfoDepth": 40,
+    "unisonVoices": 6,
+    "unisonDetune": 40,
+    "unisonSpread": 90,
+    "envelope": {
+      "attack": 1,
+      "decay": 0.5,
+      "sustain": 0.9,
+      "release": 2
+    },
+    "vibrato": {
+      "rate": 0.5,
+      "depth": 15
+    },
+    "fx": {
+      "reverbMix": 0.6,
+      "reverbDecay": 0.9,
+      "chorusRate": 0.2,
+      "chorusDepth": 0.8,
+      "chorusMix": 0.4
+    }
+  }
+}

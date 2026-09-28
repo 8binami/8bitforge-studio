@@ -1,0 +1,41 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Choir Pad",
+  "category": "pads",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "triangle",
+    "dutyCycle": 0.5,
+    "volume": 0.15,
+    "detune": 8,
+    "pitchEnv": 0,
+    "glide": 0.2,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 2500,
+    "filterQ": 2,
+    "filterEnvAmount": 4,
+    "filterEnvAttack": 0.8,
+    "filterEnvRelease": 0.6,
+    "unisonVoices": 4,
+    "unisonDetune": 20,
+    "unisonSpread": 50,
+    "lfo1Delay": 0.5,
+    "envelope": {
+      "attack": 0.5,
+      "decay": 0.4,
+      "sustain": 0.8,
+      "release": 1
+    },
+    "vibrato": {
+      "rate": 4,
+      "depth": 10
+    },
+    "fx": {
+      "reverbMix": 0.4
+    }
+  }
+}

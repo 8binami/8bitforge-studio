@@ -1,0 +1,45 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "kits",
+  "name": "Chiptune RPG",
+  "category": "retro",
+  "tags": [],
+  "cover": "img/kits/chiptune-rpg.svg",
+  "data": {
+    "tracks": [
+      {
+        "presetKey": "lead-classic",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "chord-organ",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "bass-sub",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "arp-bell",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "kick-909",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "snare-rim",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "hat-closed",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "fx-powerup",
+        "presetType": "builtin"
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "2A03 Sweep FX",
+  "category": "fx",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "square",
+    "dutyCycle": 0.5,
+    "volume": 0.18,
+    "detune": 0,
+    "pitchEnv": 18,
+    "glide": 0.08,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 14000,
+    "filterQ": 0.5,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.25,
+      "sustain": 0,
+      "release": 0.12
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "crushBits": 4,
+      "crushRate": 1
+    }
+  }
+}

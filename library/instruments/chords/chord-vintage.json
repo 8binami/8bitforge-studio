@@ -1,0 +1,36 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Vintage",
+  "category": "chords",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "square",
+    "dutyCycle": 0.5,
+    "volume": 0.17,
+    "detune": 8,
+    "pitchEnv": 0,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 2000,
+    "filterQ": 1.5,
+    "envelope": {
+      "attack": 0.05,
+      "decay": 0.25,
+      "sustain": 0.7,
+      "release": 0.4
+    },
+    "vibrato": {
+      "rate": 3,
+      "depth": 6
+    },
+    "fx": {
+      "chorusRate": 1.2,
+      "chorusDepth": 0.4,
+      "chorusMix": 0.3
+    }
+  }
+}

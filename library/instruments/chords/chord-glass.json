@@ -1,0 +1,40 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Glass",
+  "category": "chords",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sine",
+    "dutyCycle": 0.5,
+    "volume": 0.15,
+    "detune": 5,
+    "pitchEnv": 0,
+    "glide": 0,
+    "unisonVoices": 3,
+    "unisonDetune": 12,
+    "unisonSpread": 50,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 8000,
+    "filterQ": 2,
+    "envelope": {
+      "attack": 0.1,
+      "decay": 0.3,
+      "sustain": 0.6,
+      "release": 0.8
+    },
+    "vibrato": {
+      "rate": 3,
+      "depth": 5
+    },
+    "fx": {
+      "reverbMix": 0.35,
+      "chorusRate": 1.5,
+      "chorusDepth": 0.3,
+      "chorusMix": 0.2
+    }
+  }
+}

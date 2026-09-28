@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "RPG Battle",
+  "category": "retro",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Intense RPG battle",
+    "variants": {
+      "base": {
+        "kick": "x.x...x.x.x...x.",
+        "snare": "....x.......x...",
+        "hihat": "xx.xx.xx.xx.xx.x"
+      },
+      "variation": {
+        "kick": "x.x..xx.x.x..xx.",
+        "snare": "....x...x...x...",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      },
+      "fill": {
+        "kick": "x.x...x.x.x.xxxx",
+        "snare": "....x.......xxxx",
+        "hihat": "xx.xx.xx.xx.xxxx"
+      }
+    }
+  }
+}

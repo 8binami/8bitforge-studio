@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Samba",
+  "category": "world",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Festive Brazilian rhythm",
+    "variants": {
+      "base": {
+        "kick": "x...x...x...x...",
+        "snare": "..x...x...x...x.",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      },
+      "variation": {
+        "kick": "x..xx...x..xx...",
+        "snare": ".xx...x..xx...x.",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      },
+      "fill": {
+        "kick": "x...x...x.......",
+        "snare": "..x...x...x.xxxx",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      }
+    }
+  }
+}

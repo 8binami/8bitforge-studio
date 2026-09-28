@@ -1,0 +1,43 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Synthwave",
+  "category": "synth",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.17,
+    "detune": 8,
+    "pitchEnv": 0,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 3000,
+    "filterQ": 2,
+    "unisonVoices": 4,
+    "unisonDetune": 20,
+    "unisonSpread": 60,
+    "envelope": {
+      "attack": 0.05,
+      "decay": 0.3,
+      "sustain": 0.7,
+      "release": 0.5
+    },
+    "vibrato": {
+      "rate": 3,
+      "depth": 5
+    },
+    "fx": {
+      "delayTime": 0.5,
+      "delayFeedback": 0.3,
+      "delayMix": 0.2,
+      "reverbMix": 0.2,
+      "chorusRate": 1.5,
+      "chorusDepth": 0.3,
+      "chorusMix": 0.25
+    }
+  }
+}

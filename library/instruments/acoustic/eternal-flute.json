@@ -1,0 +1,45 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Eternal Flute",
+  "category": "acoustic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sine",
+    "volume": 0.17,
+    "glide": 0.03,
+    "filterCutoff": 10705.621503091053,
+    "filterQ": 1.135,
+    "filterEnabled": true,
+    "filterType": "notch",
+    "filterKeyTrack": 67,
+    "filterLfoRate": 2.6637376942478235,
+    "filterLfoDepth": 11.153846153846159,
+    "filterEnvAmount": -17,
+    "filterEnvAttack": 0.10739565535757871,
+    "filterEnvRelease": 0.11538461538461542,
+    "unisonVoices": 6,
+    "lfo1Delay": 0.3,
+    "envelope": {
+      "attack": 0.23260922626311936,
+      "decay": 0.3,
+      "sustain": 0.75,
+      "release": 0.25
+    },
+    "vibrato": {
+      "rate": 4.756325766821251,
+      "depth": 11.153846153846159
+    },
+    "fx": {
+      "delayTime": 0.5,
+      "delayFeedback": 0.4,
+      "delayMix": 0.3,
+      "reverbMix": 0.5,
+      "chorusRate": 2,
+      "chorusDepth": 0.2999999948466818,
+      "chorusMix": 0.2
+    }
+  }
+}

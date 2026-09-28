@@ -1,0 +1,42 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "SID Hard Sync",
+  "category": "retro",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.17,
+    "detune": 20,
+    "pitchEnv": 3,
+    "glide": 0,
+    "unisonVoices": 2,
+    "unisonDetune": 25,
+    "unisonSpread": 10,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 3000,
+    "filterQ": 8,
+    "filterEnvAmount": 15,
+    "filterEnvAttack": 0.005,
+    "filterEnvRelease": 0.3,
+    "envelope": {
+      "attack": 0.003,
+      "decay": 0.15,
+      "sustain": 0.7,
+      "release": 0.1
+    },
+    "vibrato": {
+      "rate": 6,
+      "depth": 8
+    },
+    "fx": {
+      "crushBits": 8,
+      "crushRate": 1,
+      "distortion": 0.15
+    }
+  }
+}

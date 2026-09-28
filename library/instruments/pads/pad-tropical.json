@@ -1,0 +1,40 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Tropical Pad",
+  "category": "pads",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "triangle",
+    "dutyCycle": 0.5,
+    "volume": 0.14,
+    "detune": 8,
+    "pitchEnv": 0,
+    "glide": 0.2,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 4000,
+    "filterQ": 1,
+    "unisonVoices": 3,
+    "unisonDetune": 12,
+    "unisonSpread": 60,
+    "envelope": {
+      "attack": 0.3,
+      "decay": 0.3,
+      "sustain": 0.75,
+      "release": 0.7
+    },
+    "vibrato": {
+      "rate": 3,
+      "depth": 8
+    },
+    "fx": {
+      "reverbMix": 0.35,
+      "chorusRate": 1,
+      "chorusDepth": 0.3,
+      "chorusMix": 0.2
+    }
+  }
+}

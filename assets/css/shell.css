@@ -1,0 +1,303 @@
+/* ==============================================
+   8BitForge Studio: the application shell
+   ==============================================
+   The frame everything else sits in: a topbar across the top, the side
+   navigation down the left, the studio filling what is left. Stock Bootstrap
+   has no opinion about any of it, so this is where the layout lives.
+
+   It is structure only. The colours, the spacing and the type belong to
+   `premium-light.css` and to the themes the engine writes at runtime; this
+   file says where things are, not what they look like.
+
+   Two widths for the sidenav, chosen by `data-sidenav-size` on the root
+   element: the full one, and a condensed strip of icons. The studio opens
+   condensed, which is why the condensed rules are the ones our other
+   stylesheets lean on.
+   ============================================== */
+
+:root {
+    --forge-topbar-height: 65px;
+    --forge-sidenav-width: 235px;
+    --forge-sidenav-width-condensed: 75px;
+    --forge-logo-lg-height: 24px;
+    --forge-logo-sm-height: 26px;
+}
+
+/* ── The frame ───────────────────────────────────────────────────── */
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+/* ── Topbar ──────────────────────────────────────────────────────── */
+/*
+   Sticky rather than fixed: it scrolls with nothing, but it stays in the
+   flow, so the content below it needs no top margin. It starts where the
+   sidenav ends, and follows it when the sidenav changes width.
+*/
+.app-topbar {
+    position: sticky;
+    top: 0;
+    /* Above the right sidebar (.asidebar, z-index 1040) so the topbar's own
+       dropdowns (the user menu in particular) open over it rather than
+       under. The bar sits at the top edge (0-65px) and the sidebar below it
+       (75px→bottom), so they never overlap; only the dropdowns that spill
+       downward were being clipped by the sidebar's stacking context. Kept
+       under the modal layer (1050+). */
+    z-index: 1045;
+    height: var(--forge-topbar-height);
+    margin-inline-start: var(--forge-sidenav-width);
+    transition: margin-inline-start 0.25s ease-in-out;
+}
+
+.app-topbar .topbar-menu {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-inline: 1.25rem;
+}
+
+/* Each cluster of controls in the bar: full height, centred in it. */
+.app-topbar .topbar-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--forge-topbar-height);
+}
+
+.app-topbar ul {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+/* ── Side navigation ─────────────────────────────────────────────── */
+
+.sidenav-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 1005;
+    width: var(--forge-sidenav-width);
+    transition: width 0.25s ease-in-out;
+}
+
+/*
+   The menu scrolls, the logo above it does not: hence the height that takes
+   the logo block out. The theme did this with SimpleBar, a library that
+   replaced the browser's scrollbar with markup of its own; the panel scrolls
+   itself now.
+*/
+.sidenav-menu .scrollbar {
+    height: calc(100% - var(--forge-topbar-height));
+}
+
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 0;
+    list-style-type: none;
+}
+
+.side-nav .side-nav-link {
+    display: flex;
+    align-items: center;
+    position: relative;
+    white-space: nowrap;
+}
+
+.side-nav .side-nav-link .menu-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Anything pinned to the end of a row (a count, a state) goes right. */
+.side-nav .side-nav-link .badge {
+    margin-inline-start: auto;
+}
+
+.side-nav .side-nav-link.disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.5;
+}
+
+.side-nav .side-nav-title {
+    pointer-events: none;
+    cursor: default;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+/* ── Condensed: a strip of icons ─────────────────────────────────── */
+/*
+   The width the studio actually runs at. The label, the arrow and any badge
+   go; the icon centres itself in what is left. Hovering a row brings its
+   label back, spilling over the content beside it.
+*/
+html[data-sidenav-size='condensed'] .sidenav-menu {
+    width: var(--forge-sidenav-width-condensed);
+}
+
+html[data-sidenav-size='condensed'] .app-topbar,
+html[data-sidenav-size='condensed'] .content-page {
+    margin-inline-start: var(--forge-sidenav-width-condensed);
+}
+
+html[data-sidenav-size='condensed'] .sidenav-menu .logo span.logo-lg {
+    display: none;
+}
+
+html[data-sidenav-size='condensed'] .sidenav-menu .logo span.logo-sm {
+    display: block;
+}
+
+html[data-sidenav-size='condensed'] .side-nav-title,
+html[data-sidenav-size='condensed'] .side-nav-link .menu-text,
+html[data-sidenav-size='condensed'] .side-nav-link .badge {
+    display: none;
+}
+
+html[data-sidenav-size='condensed'] .side-nav-link .menu-icon {
+    display: flex;
+    justify-content: center;
+    min-width: calc(var(--forge-sidenav-width-condensed) - 20px);
+}
+
+html[data-sidenav-size='condensed'] .side-nav-item:hover .side-nav-link .menu-text {
+    display: flex;
+}
+
+/* ── Content ─────────────────────────────────────────────────────── */
+
+.content-page {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-inline-start: var(--forge-sidenav-width);
+    min-height: calc(100vh - calc(var(--forge-topbar-height) + 1px));
+    padding: 0 0.625rem;
+    transition: all 0.25s ease-in-out;
+}
+
+/* The controls panel on the right takes its width out of the content. */
+@media (min-width: 1200px) {
+    .wrapper:has(.asidebar) .content-page {
+        margin-inline-end: 250px;
+    }
+}
+
+/* ── Logos ───────────────────────────────────────────────────────── */
+/*
+   Two pairs: a wide mark and a square one, one of each for a light theme and
+   a dark one. The condensed rules above swap wide for square; these swap
+   light for dark with the theme.
+*/
+.logo-lg img {
+    height: var(--forge-logo-lg-height);
+}
+
+.logo-sm img {
+    height: var(--forge-logo-sm-height);
+}
+
+.logo span.logo-lg {
+    display: block;
+}
+
+.logo span.logo-sm {
+    display: none;
+}
+
+.logo.logo-light {
+    display: none;
+}
+
+.logo.logo-dark {
+    display: block;
+}
+
+html[data-bs-theme='dark'] .logo.logo-light {
+    display: block;
+}
+
+html[data-bs-theme='dark'] .logo.logo-dark {
+    display: none;
+}
+
+/*
+   The block above the menu is exactly as tall as the topbar beside it: the
+   two run along the same line across the top of the window, and a few pixels
+   of difference read as a misalignment rather than as a design. It is sticky
+   so the logo stays put while the menu under it scrolls.
+*/
+.sidenav-menu > .logo {
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: var(--forge-topbar-height);
+    padding: 0 12px;
+}
+
+/* The logo in the topbar is the one shown when the sidenav is not. */
+.logo-topbar {
+    display: none;
+    line-height: var(--forge-topbar-height);
+    padding: 0 0.625rem;
+}
+
+@media (max-width: 767.98px) {
+    .logo-topbar {
+        display: block;
+    }
+
+    .logo-topbar span.logo-lg {
+        display: none;
+    }
+
+    .logo-topbar span.logo-sm {
+        display: block;
+    }
+}
+
+@media (max-width: 375px) {
+    .logo-topbar {
+        display: none;
+    }
+}
+
+/* ── Two utilities the markup asks for ───────────────────────────── */
+
+/* Bootstrap's `fs-*` scale stops at 6. */
+.fs-22 {
+    font-size: 22px;
+}
+
+/*
+   Bootstrap has no dashed-border utility, so this one is written the way its
+   own border utilities are: by changing the variable the `.border` shorthand
+   reads, never by setting `border-style` directly.
+
+   Setting the style directly is a trap. A side with a style and no declared
+   width falls back to `medium` (three pixels) so `border-style: dashed` on
+   an element that only has a bottom border, like a card header, invents three
+   more. That is what put a dashed frame round the top of every card.
+*/
+.border-dashed {
+    --bs-border-style: dashed;
+}
+
+/* ── Printing ────────────────────────────────────────────────────── */
+
+@media print {
+    .sidenav-menu,
+    .app-topbar {
+        display: none !important;
+    }
+
+    .content-page {
+        margin: 0;
+        padding: 0 !important;
+    }
+}

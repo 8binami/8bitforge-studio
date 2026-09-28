@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Breakbeat",
+  "category": "electronic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Syncopated Amen break, with variations",
+    "variants": {
+      "base": {
+        "kick": "x.....x...x...x.",
+        "snare": "....x...x...x...",
+        "hihat": "xxx.xxx.xxx.xxx."
+      },
+      "variation": {
+        "kick": "x....x....x...x.",
+        "snare": "....x..xx...x...",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      },
+      "fill": {
+        "kick": "x.....x...x.xxxx",
+        "snare": "....x...x...xxxx",
+        "hihat": "x.x.x.x.x.x....."
+      }
+    }
+  }
+}

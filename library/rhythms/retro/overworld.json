@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Overworld",
+  "category": "retro",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Adventure overworld map theme rhythm",
+    "variants": {
+      "base": {
+        "kick": "x...x...x...x...",
+        "snare": "..x...x...x...x.",
+        "hihat": "x.x.x.x.x.x.x.x."
+      },
+      "variation": {
+        "kick": "x..xx...x..xx...",
+        "snare": "..x...x...x...x.",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      },
+      "fill": {
+        "kick": "x...x...x.......",
+        "snare": "..x...x...x.xxxx",
+        "hihat": "x.x.x.x.x.x.xxxx"
+      }
+    }
+  }
+}

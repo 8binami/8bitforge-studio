@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Trance",
+  "category": "electronic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Four-to-the-floor kick, offbeat hi-hat, snare on 2 and 4",
+    "variants": {
+      "base": {
+        "kick": "x...x...x...x...x...x...x...x...",
+        "snare": "....x.......x...................",
+        "hihat": "..x...x...x...x...x...x...x...x."
+      },
+      "variation": {
+        "kick": "x...x.x.x...x...x...x...x...x...",
+        "snare": "....x.......x...................",
+        "hihat": ".xx..xx..xx..xx...x...x...x...x."
+      },
+      "fill": {
+        "kick": "x...x...x...x.x.",
+        "snare": "....x.......xxxx",
+        "hihat": "..x...x...x....."
+      }
+    }
+  }
+}

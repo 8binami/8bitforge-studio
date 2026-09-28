@@ -1,0 +1,39 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Lofi Keys",
+  "category": "leads",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "triangle",
+    "dutyCycle": 0.5,
+    "volume": 0.17,
+    "detune": 3,
+    "pitchEnv": 0,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 2000,
+    "filterQ": 1,
+    "envelope": {
+      "attack": 0.005,
+      "decay": 0.4,
+      "sustain": 0.3,
+      "release": 0.5
+    },
+    "vibrato": {
+      "rate": 2,
+      "depth": 4
+    },
+    "fx": {
+      "crushBits": 10,
+      "crushRate": 0.8,
+      "reverbMix": 0.2,
+      "chorusRate": 0.4,
+      "chorusDepth": 0.2,
+      "chorusMix": 0.15
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Atmosphere",
+  "category": "pads",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "triangle",
+    "dutyCycle": 0.5,
+    "volume": 0.13,
+    "detune": 6,
+    "pitchEnv": 0,
+    "glide": 0.2,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 2000,
+    "filterQ": 2,
+    "filterLfoRate": 0.15,
+    "filterLfoDepth": 40,
+    "unisonVoices": 3,
+    "unisonDetune": 18,
+    "unisonSpread": 50,
+    "envelope": {
+      "attack": 1.2,
+      "decay": 0.5,
+      "sustain": 0.9,
+      "release": 2
+    },
+    "vibrato": {
+      "rate": 1.5,
+      "depth": 4
+    },
+    "fx": {
+      "reverbMix": 0.5,
+      "delayTime": 0.6,
+      "delayFeedback": 0.35,
+      "delayMix": 0.2
+    }
+  }
+}

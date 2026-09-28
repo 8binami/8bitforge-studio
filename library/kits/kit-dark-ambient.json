@@ -1,0 +1,45 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "kits",
+  "name": "Dark Ambient",
+  "category": "ambient",
+  "tags": [],
+  "cover": "img/kits/dark-ambient.svg",
+  "data": {
+    "tracks": [
+      {
+        "presetKey": "lead-drone",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "pad-dark-ambient",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "bass-rumble",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "arp-texture",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "kick-deep-thud",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "snare-ghost",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "hat-metallic",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "fx-void",
+        "presetType": "builtin"
+      }
+    ]
+  }
+}

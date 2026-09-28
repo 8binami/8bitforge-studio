@@ -1,0 +1,45 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "kits",
+  "name": "Acid House",
+  "category": "synth",
+  "tags": [],
+  "cover": "img/kits/acid-house.svg",
+  "data": {
+    "tracks": [
+      {
+        "presetKey": "lead-filter",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "synth-trance",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "bass-acid",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "arp-acid",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "kick-909",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "snare-clap",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "hat-closed",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "fx-laser",
+        "presetType": "builtin"
+      }
+    ]
+  }
+}

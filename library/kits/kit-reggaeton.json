@@ -1,0 +1,45 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "kits",
+  "name": "Reggaeton",
+  "category": "synth",
+  "tags": [],
+  "cover": "img/kits/reggaeton.svg",
+  "data": {
+    "tracks": [
+      {
+        "presetKey": "lead-reggaeton",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "chord-dembow",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "bass-reggaeton",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "arp-reggaeton",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "kick-dembow",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "snare-dembow",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "hat-reggaeton",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "fx-horn-hit",
+        "presetType": "builtin"
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "generator-presets",
+  "name": "ChiptuneEpic234",
+  "category": "chiptune",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "chaos": 50,
+    "complexity": 50,
+    "density": 50,
+    "swing": 0,
+    "humanize": 0,
+    "octaveMin": 3,
+    "octaveMax": 4,
+    "rootKey": "C",
+    "scaleType": "major",
+    "genre": "chiptune",
+    "mood": "epic",
+    "phraseLength": 8,
+    "seed": 0
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Funk Bass",
+  "category": "bass",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "square",
+    "dutyCycle": 0.25,
+    "volume": 0.23,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 1500,
+    "filterQ": 6,
+    "filterEnvAmount": 16,
+    "filterEnvAttack": 0.001,
+    "filterEnvRelease": 0.12,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.12,
+      "sustain": 0.3,
+      "release": 0.06
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "distortion": 0.15
+    }
+  }
+}

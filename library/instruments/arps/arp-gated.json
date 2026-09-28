@@ -1,0 +1,40 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Gated Arp",
+  "category": "arps",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.18,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0,
+    "unisonVoices": 2,
+    "unisonDetune": 10,
+    "unisonSpread": 40,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 4000,
+    "filterQ": 2,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.08,
+      "sustain": 0.4,
+      "release": 0.05
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "arp": {
+      "mode": "updown",
+      "rate": "1/16",
+      "octaves": 2,
+      "gate": 0.3
+    }
+  }
+}

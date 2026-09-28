@@ -1,0 +1,47 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Lofi Pluck",
+  "category": "arps",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "triangle",
+    "dutyCycle": 0.5,
+    "volume": 0.15,
+    "detune": 5,
+    "pitchEnv": 0,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 3000,
+    "filterQ": 2,
+    "filterEnvAmount": 8,
+    "filterEnvAttack": 0.001,
+    "filterEnvRelease": 0.3,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.35,
+      "sustain": 0.1,
+      "release": 0.4
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "crushBits": 11,
+      "crushRate": 0.85,
+      "delayTime": 0.375,
+      "delayFeedback": 0.3,
+      "delayMix": 0.2
+    },
+    "arp": {
+      "mode": "up",
+      "rate": "1/8",
+      "octaves": 2,
+      "gate": 0.7
+    }
+  }
+}

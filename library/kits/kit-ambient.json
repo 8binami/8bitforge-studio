@@ -1,0 +1,45 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "kits",
+  "name": "Ambient Pads",
+  "category": "ambient",
+  "tags": [],
+  "cover": "img/kits/ambient.svg",
+  "data": {
+    "tracks": [
+      {
+        "presetKey": "pad-shimmer",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "pad-atmosphere",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "pad-dark",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "arp-bell",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "kick-808",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "perc-cymbal",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "hat-open",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "fx-rain",
+        "presetType": "builtin"
+      }
+    ]
+  }
+}

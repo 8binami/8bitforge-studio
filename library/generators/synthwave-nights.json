@@ -1,0 +1,24 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "generator-presets",
+  "name": "Synthwave Nights",
+  "category": "synthwave",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "genre": "synthwave",
+    "mood": "dark",
+    "rootKey": "A",
+    "scaleType": "minor",
+    "chaos": 35,
+    "complexity": 50,
+    "density": 45,
+    "swing": 10,
+    "humanize": 5,
+    "octaveMin": 2,
+    "octaveMax": 4,
+    "phraseLength": 8,
+    "seed": 0
+  }
+}

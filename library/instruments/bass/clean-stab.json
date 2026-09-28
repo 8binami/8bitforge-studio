@@ -1,0 +1,24 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Clean Stab",
+  "category": "bass",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "square",
+    "volume": 0.21,
+    "unisonVoices": 6,
+    "envelope": {
+      "attack": 0.005,
+      "decay": 0.3,
+      "sustain": 0.2,
+      "release": 0.2
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    }
+  }
+}

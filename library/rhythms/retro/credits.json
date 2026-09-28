@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Credits",
+  "category": "retro",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Triumphant end credits roll beat",
+    "variants": {
+      "base": {
+        "kick": "x.......x.......",
+        "snare": "....x.......x...",
+        "hihat": "xxx.xxx.xxx.xxx."
+      },
+      "variation": {
+        "kick": "x.....x.x.....x.",
+        "snare": "....x.....x.x...",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      },
+      "fill": {
+        "kick": "x.......x...xxxx",
+        "snare": "....x.......xxxx",
+        "hihat": "x.x.x.x.x.x.xxxx"
+      }
+    }
+  }
+}

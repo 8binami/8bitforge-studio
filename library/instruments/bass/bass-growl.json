@@ -1,0 +1,27 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Growl Bass",
+  "category": "bass",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.25,
+    "detune": 50,
+    "pitchEnv": -3,
+    "glide": 0.05,
+    "envelope": {
+      "attack": 0.02,
+      "decay": 0.15,
+      "sustain": 0.75,
+      "release": 0.12
+    },
+    "vibrato": {
+      "rate": 6,
+      "depth": 20
+    }
+  }
+}

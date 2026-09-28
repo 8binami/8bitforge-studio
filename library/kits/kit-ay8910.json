@@ -1,0 +1,45 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "kits",
+  "name": "AY-3-8910 (ZX Spectrum)",
+  "category": "retro",
+  "tags": [],
+  "cover": "img/kits/ay8910.svg",
+  "data": {
+    "tracks": [
+      {
+        "presetKey": "retro-ay8910-tone1",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "retro-ay8910-tone2",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "retro-ay8910-tone3",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "retro-ay8910-env",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "kick-ay8910",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "snare-ay8910",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "hat-ay8910",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "fx-ay8910-buzz",
+        "presetType": "builtin"
+      }
+    ]
+  }
+}

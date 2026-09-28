@@ -1,0 +1,35 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "2A03 Pulse 2",
+  "category": "retro",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "square",
+    "dutyCycle": 0.25,
+    "volume": 0.17,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 14000,
+    "filterQ": 0.5,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.1,
+      "sustain": 0.65,
+      "release": 0.07
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "crushBits": 4,
+      "crushRate": 1
+    }
+  }
+}

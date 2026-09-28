@@ -1,0 +1,37 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Flute",
+  "category": "acoustic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sine",
+    "dutyCycle": 0.5,
+    "volume": 0.17,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0.03,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 4000,
+    "filterQ": 1,
+    "filterLfoRate": 0.5,
+    "filterLfoDepth": 15,
+    "lfo1Delay": 0.3,
+    "envelope": {
+      "attack": 0.08,
+      "decay": 0.1,
+      "sustain": 0.75,
+      "release": 0.25
+    },
+    "vibrato": {
+      "rate": 5,
+      "depth": 8
+    },
+    "fx": {
+      "reverbMix": 0.2
+    }
+  }
+}

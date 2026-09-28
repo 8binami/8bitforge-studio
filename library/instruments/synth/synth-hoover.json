@@ -1,0 +1,37 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Hoover",
+  "category": "synth",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.19,
+    "detune": 0,
+    "pitchEnv": 6,
+    "glide": 0.1,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 3000,
+    "filterQ": 3,
+    "unisonVoices": 6,
+    "unisonDetune": 50,
+    "unisonSpread": 70,
+    "envelope": {
+      "attack": 0.02,
+      "decay": 0.2,
+      "sustain": 0.7,
+      "release": 0.25
+    },
+    "vibrato": {
+      "rate": 4,
+      "depth": 15
+    },
+    "fx": {
+      "distortion": 0.3
+    }
+  }
+}

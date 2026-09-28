@@ -1,0 +1,32 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "POKEY Distort FX",
+  "category": "fx",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "square",
+    "dutyCycle": 0.5,
+    "volume": 0.18,
+    "detune": 0,
+    "pitchEnv": -18,
+    "glide": 0.15,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.35,
+      "sustain": 0,
+      "release": 0.2
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "crushBits": 3,
+      "crushRate": 0.8,
+      "distortion": 0.5
+    }
+  }
+}

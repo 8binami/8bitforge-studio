@@ -1,0 +1,36 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Triangle DB",
+  "category": "leads",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sine",
+    "volume": 0.14,
+    "pitchEnv": -40.001760584035175,
+    "glide": 0.16410287710336535,
+    "octaveOffset": 2,
+    "envelope": {
+      "attack": 0.09492571492821722,
+      "decay": 0.2666673,
+      "sustain": 0.4916142736752294,
+      "release": 0.5435903695913462
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "delayFeedback": 0.3,
+      "reverbMix": 0.3
+    },
+    "arp": {
+      "mode": "up",
+      "rate": "1/16",
+      "octaves": 3,
+      "gate": 0.5
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "808 Sub",
+  "category": "bass",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sine",
+    "dutyCycle": 0.5,
+    "volume": 0.36,
+    "detune": 0,
+    "pitchEnv": 6,
+    "glide": 0,
+    "octaveOffset": -1,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.6,
+      "sustain": 0.4,
+      "release": 0.15
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Grime",
+  "category": "urban",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Aggressive UK grime rhythm",
+    "variants": {
+      "base": {
+        "kick": "x..x....x..x..x.",
+        "snare": "....x.......x...",
+        "hihat": "x.x.x.xxx.x.x.xx"
+      },
+      "variation": {
+        "kick": "x..x..x.x..x..x.",
+        "snare": "....x....x..x...",
+        "hihat": "x.x.x.xxx.x.x.xx"
+      },
+      "fill": {
+        "kick": "x..x....x..xxxxx",
+        "snare": "....x.......xxxx",
+        "hihat": "x.x.x.xxx.x....."
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Electric Piano",
+  "category": "chords",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "triangle",
+    "dutyCycle": 0.5,
+    "volume": 0.17,
+    "detune": 5,
+    "pitchEnv": 0,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 5000,
+    "filterQ": 1,
+    "filterEnvAmount": -6,
+    "filterEnvAttack": 0.001,
+    "filterEnvRelease": 0.4,
+    "envelope": {
+      "attack": 0.005,
+      "decay": 0.4,
+      "sustain": 0.5,
+      "release": 0.6
+    },
+    "vibrato": {
+      "rate": 5,
+      "depth": 10
+    },
+    "fx": {
+      "chorusRate": 1,
+      "chorusDepth": 0.5,
+      "chorusMix": 0.3,
+      "reverbMix": 0.2
+    }
+  }
+}

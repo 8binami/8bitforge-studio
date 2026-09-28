@@ -1,0 +1,38 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Piano",
+  "category": "acoustic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "triangle",
+    "dutyCycle": 0.5,
+    "volume": 0.21,
+    "detune": 5,
+    "pitchEnv": 1,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 5000,
+    "filterQ": 1.5,
+    "filterEnvAmount": 8,
+    "filterEnvAttack": 0.001,
+    "filterEnvRelease": 0.5,
+    "filterKeyTrack": 0.4,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.4,
+      "sustain": 0.3,
+      "release": 0.4
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "reverbMix": 0.2
+    }
+  }
+}

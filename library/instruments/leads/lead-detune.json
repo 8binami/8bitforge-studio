@@ -1,0 +1,27 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Detune Lead",
+  "category": "leads",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "square",
+    "dutyCycle": 0.5,
+    "volume": 0.19,
+    "detune": 20,
+    "pitchEnv": 0,
+    "glide": 0,
+    "envelope": {
+      "attack": 0.02,
+      "decay": 0.1,
+      "sustain": 0.75,
+      "release": 0.22
+    },
+    "vibrato": {
+      "rate": 3,
+      "depth": 12
+    }
+  }
+}

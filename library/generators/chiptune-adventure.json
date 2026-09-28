@@ -1,0 +1,24 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "generator-presets",
+  "name": "Chiptune Adventure",
+  "category": "chiptune",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "genre": "chiptune",
+    "mood": "epic",
+    "rootKey": "C",
+    "scaleType": "major",
+    "chaos": 40,
+    "complexity": 60,
+    "density": 55,
+    "swing": 0,
+    "humanize": 0,
+    "octaveMin": 3,
+    "octaveMax": 5,
+    "phraseLength": 8,
+    "seed": 0
+  }
+}

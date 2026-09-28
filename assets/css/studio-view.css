@@ -1,0 +1,160 @@
+/* ==============================================
+   8BitForge Studio: transport, patterns, tracks
+   ==============================================
+   The pieces of the studio screen that the ported stylesheet does not
+   already cover. The grid itself (.track, .track-grid, .grid-cell) is
+   styled by studio.css, as it was in the original app.
+   ============================================== */
+
+/* Surfaces and borders come from whatever theme is in charge; these are the
+   fallbacks for a build that has none. */
+:root {
+    --forge-shell-surface: var(--bs-secondary-bg, #1e2228);
+    --forge-shell-border: var(--bs-border-color, rgba(255, 255, 255, 0.08));
+}
+
+/* ── Transport ───────────────────────────────────────────────────── */
+
+.forge-transport {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.forge-transport-btn {
+    min-width: 40px;
+    height: 34px;
+    padding: 0 12px;
+    border: 1px solid var(--forge-shell-border);
+    border-radius: 6px;
+    background: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    font-size: 14px;
+    line-height: 1;
+    cursor: pointer;
+    transition:
+        border-color 0.15s ease,
+        color 0.15s ease,
+        background 0.15s ease;
+}
+
+.forge-transport-btn:hover {
+    border-color: var(--forge-accent, #00ff88);
+    color: var(--forge-accent, #00ff88);
+}
+
+.forge-transport-btn.active {
+    border-color: var(--forge-accent, #00ff88);
+    background: rgba(0, 255, 136, 0.12);
+    color: var(--forge-accent, #00ff88);
+}
+
+.forge-transport-btn.wide {
+    font-size: 13px;
+    letter-spacing: 0.02em;
+}
+
+.forge-transport-field {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--forge-text-muted, #c0c6ce);
+}
+
+.forge-transport-field input,
+.forge-transport-field select {
+    width: 72px;
+    height: 34px;
+    padding: 0 8px;
+    border: 1px solid var(--forge-shell-border);
+    border-radius: 6px;
+    background: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    font-family: var(--forge-mono, monospace);
+    font-size: 13px;
+}
+
+.forge-transport-status {
+    font-family: var(--forge-mono, monospace);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--forge-accent, #00ff88);
+}
+
+/* ── Pattern bar ─────────────────────────────────────────────────── */
+
+.forge-pattern-bar {
+    display: flex;
+    gap: 6px;
+}
+
+.forge-pattern-btn {
+    position: relative;
+    width: 38px;
+    height: 32px;
+    border: 1px solid var(--forge-shell-border);
+    border-radius: 6px;
+    background: var(--bs-body-bg);
+    color: var(--forge-text-muted, #c0c6ce);
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+        border-color 0.15s ease,
+        color 0.15s ease;
+}
+
+.forge-pattern-btn:hover {
+    border-color: var(--forge-accent, #00ff88);
+}
+
+.forge-pattern-btn.active {
+    border-color: var(--forge-accent, #00ff88);
+    background: rgba(0, 255, 136, 0.12);
+    color: var(--forge-accent, #00ff88);
+}
+
+/* A dot marks a pattern that already holds notes. */
+.forge-pattern-btn.has-content::after {
+    content: '';
+    position: absolute;
+    right: 5px;
+    bottom: 4px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: currentColor;
+    opacity: 0.8;
+}
+
+/* ── Tracks ──────────────────────────────────────────────────────── */
+
+.forge-tracks {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.forge-tracks .track {
+    display: flex;
+    align-items: stretch;
+    gap: 3px;
+    background: var(--bs-body-bg);
+    border: 1px solid var(--forge-shell-border);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* The first step of each beat, so a bar can be read at a glance. */
+.forge-tracks .grid-cell.beat {
+    border-left-color: rgba(255, 255, 255, 0.28);
+}
+
+.forge-tracks .grid-cell .cell-note {
+    pointer-events: none;
+}

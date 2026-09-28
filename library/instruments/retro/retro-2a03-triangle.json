@@ -1,0 +1,36 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "2A03 Triangle",
+  "category": "retro",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "triangle",
+    "dutyCycle": 0.5,
+    "volume": 0.28,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0,
+    "octaveOffset": -1,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 14000,
+    "filterQ": 0.5,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.01,
+      "sustain": 0.99,
+      "release": 0.02
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "crushBits": 4,
+      "crushRate": 1
+    }
+  }
+}

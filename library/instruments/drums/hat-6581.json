@@ -1,0 +1,35 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "SID HiHat",
+  "category": "drums",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "noise",
+    "dutyCycle": 0.5,
+    "volume": 0.25,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "highpass",
+    "filterCutoff": 5000,
+    "filterQ": 1.5,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.04,
+      "sustain": 0,
+      "release": 0.02
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "crushBits": 8,
+      "crushRate": 1
+    }
+  }
+}

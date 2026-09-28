@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Electro Swing",
+  "category": "electronic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Swing jazz meets electronic beats",
+    "variants": {
+      "base": {
+        "kick": "x...x...x...x...",
+        "snare": "....x.......x...",
+        "hihat": "x..xx..xx..xx..x"
+      },
+      "variation": {
+        "kick": "x...x.x.x...x...",
+        "snare": "....x.....x.x...",
+        "hihat": "xx.xx..xxx.xx..x"
+      },
+      "fill": {
+        "kick": "x...x...x.......",
+        "snare": "....x.......xxxx",
+        "hihat": "x..xx..xx..x...."
+      }
+    }
+  }
+}

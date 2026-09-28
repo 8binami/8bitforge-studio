@@ -1,0 +1,28 @@
+<!doctype html>
+<!-- Two attributes, both read by our own stylesheets and both needed before
+     any of them runs, which is why they are here and not in script.
+
+     `data-bs-theme` is Bootstrap's: the theme engine rewrites it. The other
+     is the width of the side navigation, and the studio opens condensed. The
+     five that used to sit beside them chose between the old theme's skins;
+     none of them is read by anything now. -->
+<html lang="en" data-bs-theme="light" data-sidenav-size="condensed">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>8BitForge Studio</title>
+        <meta
+            name="description"
+            content="Open-source chiptune and 8-bit music studio. Works offline, on your machine."
+        />
+        <!-- Nothing is linked here. Every stylesheet and every script the
+             studio needs is imported by src/main.js, so the bundler versions
+             it and a fresh clone has everything; nothing is fetched from a
+             third party, and nothing is served unprocessed from public/. -->
+    </head>
+    <body>
+        <div id="app"></div>
+
+        <script type="module" src="./src/main.js"></script>
+    </body>
+</html>

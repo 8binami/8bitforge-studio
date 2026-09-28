@@ -1,0 +1,37 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Acid 303",
+  "category": "synth",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.21,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0.08,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 400,
+    "filterQ": 18,
+    "filterEnvAmount": 24,
+    "filterEnvAttack": 0.001,
+    "filterEnvRelease": 0.15,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.2,
+      "sustain": 0.4,
+      "release": 0.1
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "distortion": 0.5
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Jazz Lead",
+  "category": "leads",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sine",
+    "dutyCycle": 0.5,
+    "volume": 0.18,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0.04,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 4000,
+    "filterQ": 1,
+    "envelope": {
+      "attack": 0.02,
+      "decay": 0.2,
+      "sustain": 0.75,
+      "release": 0.35
+    },
+    "vibrato": {
+      "rate": 5,
+      "depth": 12
+    },
+    "fx": {
+      "reverbMix": 0.2,
+      "chorusRate": 0.8,
+      "chorusDepth": 0.3,
+      "chorusMix": 0.15
+    }
+  }
+}

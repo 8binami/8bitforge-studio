@@ -1,0 +1,41 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Deep House Pad",
+  "category": "pads",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "triangle",
+    "dutyCycle": 0.5,
+    "volume": 0.14,
+    "detune": 8,
+    "pitchEnv": 0,
+    "glide": 0.3,
+    "unisonVoices": 4,
+    "unisonDetune": 18,
+    "unisonSpread": 70,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 3000,
+    "filterQ": 1,
+    "envelope": {
+      "attack": 0.6,
+      "decay": 0.4,
+      "sustain": 0.85,
+      "release": 1.2
+    },
+    "vibrato": {
+      "rate": 2,
+      "depth": 8
+    },
+    "fx": {
+      "reverbMix": 0.45,
+      "reverbDecay": 0.8,
+      "chorusRate": 0.5,
+      "chorusDepth": 0.4,
+      "chorusMix": 0.25
+    }
+  }
+}

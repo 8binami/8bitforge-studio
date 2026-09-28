@@ -1,0 +1,36 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Dub Wobble",
+  "category": "synth",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.23,
+    "detune": 10,
+    "pitchEnv": 0,
+    "glide": 0.05,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 600,
+    "filterQ": 12,
+    "filterLfoRate": 3,
+    "filterLfoDepth": 80,
+    "envelope": {
+      "attack": 0.01,
+      "decay": 0.3,
+      "sustain": 0.8,
+      "release": 0.15
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "distortion": 0.35
+    }
+  }
+}

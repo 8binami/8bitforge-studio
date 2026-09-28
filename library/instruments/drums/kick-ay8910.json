@@ -1,0 +1,31 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "AY-3 Kick",
+  "category": "drums",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "noise",
+    "dutyCycle": 0.5,
+    "volume": 0.36,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.12,
+      "sustain": 0,
+      "release": 0.04
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "crushBits": 4,
+      "crushRate": 1
+    }
+  }
+}

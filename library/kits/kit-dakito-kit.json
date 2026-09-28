@@ -1,0 +1,45 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "kits",
+  "name": "Dakito Kit",
+  "category": "retro",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "tracks": [
+      {
+        "presetKey": "dakito-lead",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "retro-gb-lead",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "dakito-bass",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "piano-savory-2",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "kick-909",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "snare-808",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "dakito-closed-hat",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "fx-coin",
+        "presetType": "builtin"
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Bell",
+  "category": "arps",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sine",
+    "dutyCycle": 0.5,
+    "volume": 0.17,
+    "detune": 12,
+    "pitchEnv": 6,
+    "glide": 0,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.5,
+      "sustain": 0.3,
+      "release": 0.8
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    }
+  }
+}

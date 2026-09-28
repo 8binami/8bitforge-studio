@@ -1,0 +1,27 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Brass",
+  "category": "chords",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.19,
+    "detune": 12,
+    "pitchEnv": 0,
+    "glide": 0.1,
+    "envelope": {
+      "attack": 0.1,
+      "decay": 0.15,
+      "sustain": 0.85,
+      "release": 0.2
+    },
+    "vibrato": {
+      "rate": 4,
+      "depth": 12
+    }
+  }
+}

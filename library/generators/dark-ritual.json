@@ -1,0 +1,24 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "generator-presets",
+  "name": "Dark Ritual",
+  "category": "techno",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "genre": "techno",
+    "mood": "mysterious",
+    "rootKey": "B",
+    "scaleType": "phrygian",
+    "chaos": 55,
+    "complexity": 50,
+    "density": 50,
+    "swing": 5,
+    "humanize": 5,
+    "octaveMin": 2,
+    "octaveMax": 4,
+    "phraseLength": 16,
+    "seed": 0
+  }
+}

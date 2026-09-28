@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Boom Bap",
+  "category": "urban",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "The classic nineties hip-hop groove",
+    "variants": {
+      "base": {
+        "kick": "x..x....x..x....",
+        "snare": "....x.......x...",
+        "hihat": "x.x.x.x.x.x.x.x."
+      },
+      "variation": {
+        "kick": "x..x...xx..x....",
+        "snare": "....x.....x.x...",
+        "hihat": "x.x.x.x.x.x.x.x."
+      },
+      "fill": {
+        "kick": "x..x....x..x....",
+        "snare": "....x.......xxxx",
+        "hihat": "x.x.x.x.x.x....."
+      }
+    }
+  }
+}

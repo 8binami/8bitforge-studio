@@ -1,0 +1,46 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Dark Pad",
+  "category": "pads",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.15,
+    "detune": 8,
+    "pitchEnv": 0,
+    "glide": 0.3,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 600,
+    "filterQ": 3,
+    "filterEnvAmount": 4,
+    "filterEnvAttack": 0.8,
+    "filterEnvRelease": 1,
+    "unisonVoices": 4,
+    "unisonDetune": 25,
+    "unisonSpread": 60,
+    "envelope": {
+      "attack": 0.8,
+      "decay": 0.5,
+      "sustain": 0.85,
+      "release": 1.5
+    },
+    "vibrato": {
+      "rate": 2,
+      "depth": 5
+    },
+    "fx": {
+      "delayTime": 0.5,
+      "delayFeedback": 0.3,
+      "delayMix": 0.15,
+      "reverbMix": 0.45,
+      "chorusRate": 0.8,
+      "chorusDepth": 0.4,
+      "chorusMix": 0.25
+    }
+  }
+}

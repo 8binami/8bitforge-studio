@@ -1,0 +1,45 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "kits",
+  "name": "RPG Advance",
+  "category": "synth",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "tracks": [
+      {
+        "presetKey": "bass-sub",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "chord-strings",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "retro-nes-tri",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "synth-saw-hall",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "kick-nes",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "snare-808",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "hat-closed",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "fx-coin",
+        "presetType": "builtin"
+      }
+    ]
+  }
+}

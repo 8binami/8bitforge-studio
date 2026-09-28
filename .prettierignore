@@ -1,0 +1,12 @@
+# Two files Prettier must leave alone.
+#
+# src/ui/app-shell.html is the original application's markup, kept as it
+# came so it can still be diffed against 8bitforge.8binami.app/app.html.
+# Reflowing 3789 lines would end that, and the markup is read far more
+# often than it is written.
+#
+# assets/css/premium-light.css aligns its trailing comments into a column
+# by hand. Prettier collapses that alignment, which is the only thing
+# making a wall of custom properties readable.
+src/ui/app-shell.html
+assets/css/premium-light.css

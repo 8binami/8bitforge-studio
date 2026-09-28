@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Jazz Ride",
+  "category": "classic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Swung jazz pattern on the ride cymbal",
+    "variants": {
+      "base": {
+        "kick": "x.........x.....",
+        "snare": "......x.......x.",
+        "hihat": "x..xx.x.x..xx.x."
+      },
+      "variation": {
+        "kick": "x......x..x.....",
+        "snare": "...x..x.......x.",
+        "hihat": "xx.xx.x.xx.xx.x."
+      },
+      "fill": {
+        "kick": "x.........x.....",
+        "snare": "......x.....xxxx",
+        "hihat": "x..xx.x.x..x...."
+      }
+    }
+  }
+}

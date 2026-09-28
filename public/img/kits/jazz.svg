@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="175" viewBox="0 0 280 175">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#2c1810"/><stop offset="100%" style="stop-color:#8b4513"/></linearGradient></defs>
+  <rect width="280" height="175" fill="url(#g)"/>
+  <text x="140" y="78" text-anchor="middle" fill="rgba(255,200,100,0.95)" font-family="monospace" font-size="26" font-weight="bold">JAZZ</text>
+  <text x="140" y="106" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="14">Fusion</text>
+  <ellipse cx="60"  cy="155" rx="18" ry="6" fill="none" stroke="rgba(255,200,100,0.3)" stroke-width="1.5"/>
+  <line x1="60" y1="149" x2="60" y2="128" stroke="rgba(255,200,100,0.3)" stroke-width="1.5"/>
+  <ellipse cx="120" cy="155" rx="18" ry="6" fill="none" stroke="rgba(255,200,100,0.25)" stroke-width="1.5"/>
+  <line x1="120" y1="149" x2="120" y2="128" stroke="rgba(255,200,100,0.25)" stroke-width="1.5"/>
+  <ellipse cx="180" cy="155" rx="18" ry="6" fill="none" stroke="rgba(255,200,100,0.3)" stroke-width="1.5"/>
+  <line x1="180" y1="149" x2="180" y2="128" stroke="rgba(255,200,100,0.3)" stroke-width="1.5"/>
+</svg>

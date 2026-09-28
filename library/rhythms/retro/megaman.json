@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Mega Drive",
+  "category": "retro",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Fast side-scrolling action beat",
+    "variants": {
+      "base": {
+        "kick": "x..x..x.x..x..x.",
+        "snare": "....x.......x...",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      },
+      "variation": {
+        "kick": "x..x.xx.x..x.xx.",
+        "snare": "....x.....x.x...",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      },
+      "fill": {
+        "kick": "x..x..x.x..xxxxx",
+        "snare": "....x.......xxxx",
+        "hihat": "xxxxxxxxxxxx...."
+      }
+    }
+  }
+}

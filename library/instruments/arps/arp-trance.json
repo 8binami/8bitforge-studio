@@ -1,0 +1,46 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Trance Arp",
+  "category": "arps",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.17,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 6000,
+    "filterQ": 3,
+    "filterEnvAmount": 8,
+    "filterEnvAttack": 0.01,
+    "filterEnvRelease": 0.2,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.15,
+      "sustain": 0.3,
+      "release": 0.15
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    },
+    "fx": {
+      "delayTime": 0.375,
+      "delayFeedback": 0.4,
+      "delayMix": 0.25,
+      "reverbMix": 0.15
+    },
+    "arp": {
+      "mode": "up",
+      "rate": "1/16",
+      "octaves": 2,
+      "gate": 0.7
+    }
+  }
+}

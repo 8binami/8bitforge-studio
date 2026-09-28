@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Deep House",
+  "category": "electronic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Deep, rolling house groove",
+    "variants": {
+      "base": {
+        "kick": "x...x...x...x...x...x...x...x...",
+        "snare": "....x.......x...................",
+        "hihat": "x.xx..x.x.xx..x................."
+      },
+      "variation": {
+        "kick": "x...x..xx...x...x...x...x...x...",
+        "snare": "....x.....x.x...................",
+        "hihat": "x.xx.xx.x.xx.xx................."
+      },
+      "fill": {
+        "kick": "x...x...x.......",
+        "snare": "....x.......xxxx",
+        "hihat": "x.xx..x.x.xx...."
+      }
+    }
+  }
+}

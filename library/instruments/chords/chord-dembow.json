@@ -1,0 +1,37 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Dembow Stab",
+  "category": "chords",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.2,
+    "detune": 15,
+    "pitchEnv": 0,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 3500,
+    "filterQ": 4,
+    "filterEnvAmount": 14,
+    "filterEnvAttack": 0.001,
+    "filterEnvRelease": 0.1,
+    "unisonVoices": 4,
+    "unisonDetune": 25,
+    "unisonSpread": 60,
+    "envelope": {
+      "attack": 0.001,
+      "decay": 0.12,
+      "sustain": 0,
+      "release": 0.1
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    }
+  }
+}

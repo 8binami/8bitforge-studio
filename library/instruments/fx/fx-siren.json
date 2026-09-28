@@ -1,0 +1,27 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Siren",
+  "category": "fx",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sine",
+    "dutyCycle": 0.5,
+    "volume": 0.18,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0,
+    "envelope": {
+      "attack": 0.1,
+      "decay": 0.1,
+      "sustain": 0.9,
+      "release": 0.3
+    },
+    "vibrato": {
+      "rate": 2,
+      "depth": 50
+    }
+  }
+}

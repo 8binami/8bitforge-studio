@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="175" viewBox="0 0 280 175">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0a0a0a"/><stop offset="100%" style="stop-color:#1a1a2e"/></linearGradient></defs>
+  <rect width="280" height="175" fill="url(#g)"/>
+  <text x="140" y="83" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="monospace" font-size="28" font-weight="bold">TECHNO</text>
+  <text x="140" y="108" text-anchor="middle" fill="rgba(255,60,60,0.7)" font-family="monospace" font-size="12">Industrial · Berlin</text>
+  <line x1="20"  y1="135" x2="20"  y2="165" stroke="rgba(255,60,60,0.5)"  stroke-width="3"/>
+  <line x1="35"  y1="148" x2="35"  y2="165" stroke="rgba(255,60,60,0.3)"  stroke-width="3"/>
+  <line x1="50"  y1="135" x2="50"  y2="165" stroke="rgba(255,60,60,0.5)"  stroke-width="3"/>
+  <line x1="65"  y1="148" x2="65"  y2="165" stroke="rgba(255,60,60,0.3)"  stroke-width="3"/>
+  <line x1="80"  y1="135" x2="80"  y2="165" stroke="rgba(255,60,60,0.5)"  stroke-width="3"/>
+  <line x1="95"  y1="148" x2="95"  y2="165" stroke="rgba(255,60,60,0.3)"  stroke-width="3"/>
+  <line x1="110" y1="135" x2="110" y2="165" stroke="rgba(255,60,60,0.5)"  stroke-width="3"/>
+  <line x1="125" y1="148" x2="125" y2="165" stroke="rgba(255,60,60,0.3)"  stroke-width="3"/>
+</svg>

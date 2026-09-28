@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Techno",
+  "category": "electronic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Hard kick, minimal offbeat hi-hat",
+    "variants": {
+      "base": {
+        "kick": "x...x...x...x...x...x...x...x...",
+        "snare": "....x.......x...................",
+        "hihat": "..x...x...x...x................."
+      },
+      "variation": {
+        "kick": "x...x..xx...x...x...x...x...x...",
+        "snare": "....x.......x...................",
+        "hihat": "..x..xx...x...x................."
+      },
+      "fill": {
+        "kick": "x...x...x...xxxx",
+        "snare": "....x.......xxxx",
+        "hihat": "..x...x...x....."
+      }
+    }
+  }
+}

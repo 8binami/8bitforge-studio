@@ -1,0 +1,45 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "kits",
+  "name": "Oudini",
+  "category": "electronic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "tracks": [
+      {
+        "presetKey": "lead-pwm",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "lead-pwm",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "pad-crystal",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "synth-saw-hall",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "nes-kick-oudini",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "retro-amiga-mod",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "hat-closed",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "acoustic-xylo",
+        "presetType": "builtin"
+      }
+    ]
+  }
+}

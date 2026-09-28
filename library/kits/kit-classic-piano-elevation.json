@@ -1,0 +1,45 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "kits",
+  "name": "Classic Piano Elevation",
+  "category": "ambient",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "tracks": [
+      {
+        "presetKey": "piano-savory",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "piano-savory",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "piano-savory",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "piano-savory",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "piano-savory",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "piano-savory",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "piano-savory",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "piano-savory",
+        "presetType": "builtin"
+      }
+    ]
+  }
+}

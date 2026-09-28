@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Motown",
+  "category": "classic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Classic Motown four-on-the-floor",
+    "variants": {
+      "base": {
+        "kick": "x...x...x...x...",
+        "snare": "....x.......x...",
+        "hihat": "x.x.x.x.x.x.x.x."
+      },
+      "variation": {
+        "kick": "x...x.x.x...x...",
+        "snare": "....x.....x.x...",
+        "hihat": "xxx.x.x.xxx.x.x."
+      },
+      "fill": {
+        "kick": "x...x...x.......",
+        "snare": "....x.......xxxx",
+        "hihat": "x.x.x.x.x.x....."
+      }
+    }
+  }
+}

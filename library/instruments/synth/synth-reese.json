@@ -1,0 +1,36 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Reese Deep",
+  "category": "synth",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.24,
+    "detune": 0,
+    "pitchEnv": 0,
+    "glide": 0.15,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 500,
+    "filterQ": 3,
+    "filterLfoRate": 0.5,
+    "filterLfoDepth": 25,
+    "unisonVoices": 2,
+    "unisonDetune": 8,
+    "unisonSpread": 30,
+    "envelope": {
+      "attack": 0.02,
+      "decay": 0.3,
+      "sustain": 0.85,
+      "release": 0.15
+    },
+    "vibrato": {
+      "rate": 0,
+      "depth": 0
+    }
+  }
+}

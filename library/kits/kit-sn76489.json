@@ -1,0 +1,45 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "kits",
+  "name": "SN76489 (SMS)",
+  "category": "retro",
+  "tags": [],
+  "cover": "img/kits/sn76489.svg",
+  "data": {
+    "tracks": [
+      {
+        "presetKey": "retro-sn76489-tone1",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "retro-sn76489-tone2",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "retro-sn76489-tone3",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "retro-sn76489-arp",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "kick-sn76489",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "snare-sn76489",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "hat-sn76489",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "fx-sn76489-pnoise",
+        "presetType": "builtin"
+      }
+    ]
+  }
+}

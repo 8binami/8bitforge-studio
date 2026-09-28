@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="175" viewBox="0 0 280 175">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#000000"/><stop offset="100%" style="stop-color:#1a0030"/></linearGradient></defs>
+  <rect width="280" height="175" fill="url(#g)"/>
+  <text x="140" y="72" text-anchor="middle" fill="rgba(180,100,255,0.8)" font-family="monospace" font-size="20" font-weight="bold">DARK</text>
+  <text x="140" y="98" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="monospace" font-size="20" font-weight="bold">AMBIENT</text>
+  <text x="140" y="118" text-anchor="middle" fill="rgba(180,100,255,0.35)" font-family="monospace" font-size="10">Drone · Atmospheric</text>
+  <circle cx="140" cy="152" r="14" fill="none" stroke="rgba(180,100,255,0.15)" stroke-width="1"/>
+  <circle cx="140" cy="152" r="20" fill="none" stroke="rgba(180,100,255,0.10)" stroke-width="1"/>
+  <circle cx="140" cy="152" r="28" fill="none" stroke="rgba(180,100,255,0.06)" stroke-width="1"/>
+  <circle cx="140" cy="152" r="4"  fill="rgba(180,100,255,0.3)"/>
+</svg>

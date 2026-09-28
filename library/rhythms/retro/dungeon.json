@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Dungeon",
+  "category": "retro",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Dark mysterious dungeon crawl beat",
+    "variants": {
+      "base": {
+        "kick": "x.....x...x.....",
+        "snare": "....x.......x...",
+        "hihat": "x..xx..xx..xx..x"
+      },
+      "variation": {
+        "kick": "x..x..x...x...x.",
+        "snare": "....x...x...x...",
+        "hihat": "x..xx..xx..xx..x"
+      },
+      "fill": {
+        "kick": "x.....x...x.xxxx",
+        "snare": "....x.......xxxx",
+        "hihat": "x..xx..xx..x...."
+      }
+    }
+  }
+}

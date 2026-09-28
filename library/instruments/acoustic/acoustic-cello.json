@@ -1,0 +1,38 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Cello",
+  "category": "acoustic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sawtooth",
+    "dutyCycle": 0.5,
+    "volume": 0.18,
+    "detune": 5,
+    "pitchEnv": 0,
+    "glide": 0.1,
+    "octaveOffset": -1,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 1800,
+    "filterQ": 2,
+    "filterKeyTrack": 0.5,
+    "tremoloRate": 4,
+    "tremoloDepth": 10,
+    "envelope": {
+      "attack": 0.2,
+      "decay": 0.3,
+      "sustain": 0.8,
+      "release": 0.4
+    },
+    "vibrato": {
+      "rate": 5,
+      "depth": 12
+    },
+    "fx": {
+      "reverbMix": 0.3
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "presets",
+  "name": "Crystal Pad",
+  "category": "pads",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "type": "sine",
+    "dutyCycle": 0.5,
+    "volume": 0.13,
+    "detune": 10,
+    "pitchEnv": 0,
+    "glide": 0,
+    "filterEnabled": true,
+    "filterType": "lowpass",
+    "filterCutoff": 6000,
+    "filterQ": 8,
+    "filterEnvAmount": 6,
+    "filterEnvAttack": 0.5,
+    "filterEnvRelease": 0.8,
+    "unisonVoices": 3,
+    "unisonDetune": 15,
+    "unisonSpread": 50,
+    "envelope": {
+      "attack": 0.6,
+      "decay": 0.4,
+      "sustain": 0.7,
+      "release": 1.2
+    },
+    "vibrato": {
+      "rate": 3,
+      "depth": 4
+    },
+    "fx": {
+      "reverbMix": 0.5,
+      "chorusRate": 1.5,
+      "chorusDepth": 0.3,
+      "chorusMix": 0.25
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Lo-Fi",
+  "category": "urban",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Chilled, laid-back groove",
+    "variants": {
+      "base": {
+        "kick": "x....x..x....x..",
+        "snare": "....x.......x...",
+        "hihat": "x.x...x.x.x...x."
+      },
+      "variation": {
+        "kick": "x....x..x..x.x..",
+        "snare": "....x.......x...",
+        "hihat": "x.x.x.x.x.x...x."
+      },
+      "fill": {
+        "kick": "x....x..x.......",
+        "snare": "....x.......xxxx",
+        "hihat": "x.x...x.x.x....."
+      }
+    }
+  }
+}

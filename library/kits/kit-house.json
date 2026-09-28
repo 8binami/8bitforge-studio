@@ -1,0 +1,45 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "kits",
+  "name": "House",
+  "category": "synth",
+  "tags": [],
+  "cover": "img/kits/house.svg",
+  "data": {
+    "tracks": [
+      {
+        "presetKey": "lead-house",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "chord-house-stab",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "bass-house",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "arp-house",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "kick-909",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "snare-clap",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "hat-closed",
+        "presetType": "builtin"
+      },
+      {
+        "presetKey": "fx-sweep",
+        "presetType": "builtin"
+      }
+    ]
+  }
+}

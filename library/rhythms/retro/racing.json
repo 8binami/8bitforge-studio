@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Racing",
+  "category": "retro",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "High-speed racing game driving beat",
+    "variants": {
+      "base": {
+        "kick": "x.x.x.x.x.x.x.x.",
+        "snare": "....x.......x...",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      },
+      "variation": {
+        "kick": "xxx.xxx.xxx.xxx.",
+        "snare": "....x...x...x...",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      },
+      "fill": {
+        "kick": "x.x.x.x.x.x.xxxx",
+        "snare": "....x.......xxxx",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "rhythms",
+  "name": "Metal",
+  "category": "classic",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "description": "Double bass drum with blast beat option",
+    "variants": {
+      "base": {
+        "kick": "xxxxxxxxxxxxxxxx",
+        "snare": "....x.......x...",
+        "hihat": "x.x.x.x.x.x.x.x."
+      },
+      "variation": {
+        "kick": "xxxxxxxxxxxxxxxx",
+        "snare": "..x.x.x...x.x.x.",
+        "hihat": "xxxxxxxxxxxxxxxx"
+      },
+      "fill": {
+        "kick": "xxxxxxxxxxxxxxxx",
+        "snare": "....x.......xxxx",
+        "hihat": "x.x.x.x.x.x.xxxx"
+      }
+    }
+  }
+}

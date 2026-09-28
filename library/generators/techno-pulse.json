@@ -1,0 +1,24 @@
+{
+  "format": "8bit-forge-item",
+  "version": "1.0",
+  "kind": "generator-presets",
+  "name": "Techno Pulse",
+  "category": "techno",
+  "tags": [],
+  "cover": null,
+  "data": {
+    "genre": "techno",
+    "mood": "energetic",
+    "rootKey": "D",
+    "scaleType": "minor",
+    "chaos": 30,
+    "complexity": 45,
+    "density": 70,
+    "swing": 0,
+    "humanize": 0,
+    "octaveMin": 2,
+    "octaveMax": 4,
+    "phraseLength": 16,
+    "seed": 0
+  }
+}
