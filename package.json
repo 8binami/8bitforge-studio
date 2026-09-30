@@ -1,6 +1,6 @@
 {
   "name": "8bitforge-studio",
-  "version": "2.3.3",
+  "version": "2.3.4",
   "description": "8BitForge Studio: open-source chiptune and 8-bit music studio. Runs offline, in the browser and on the desktop.",
   "license": "AGPL-3.0-or-later",
   "type": "module",
