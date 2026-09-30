@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/img/brand/logo-black.png" alt="8BitForge" width="360">
+  <img src="public/img/brand/logo.png" alt="8BitForge" width="360">
 </p>
 
 <p align="center">
