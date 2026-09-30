@@ -1426,6 +1426,14 @@ li.sidenav-logo-bottom img:hover {
     background: rgba(241, 196, 15, 0.2);
     color: var(--forge-playhead);
 }
+/* The measure the loop comes back to: the ones before it are an intro. */
+.mixer-measure-number.is-loop-start {
+  box-shadow: inset 2px 0 0 #10b981 !important;
+  color: #10b981 !important;
+}
+.mixer-measure-number.is-loop-start::before {
+  content: "BB  ";
+}
 .mixer-measure-number.seek-active {
     background: rgba(241, 196, 15, 0.35);
     color: var(--forge-playhead);

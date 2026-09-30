@@ -68,7 +68,45 @@ export class ArrangementPanel {
         if (count) count.textContent = String(this.measures);
 
         this._syncToggle();
+        this._syncLoopStart();
         this._markCurrentMeasure();
+    }
+
+    /**
+     * One entry per measure of the chain: the first one means no intro. A
+     * chain of one measure has nothing to choose, and the select says so by
+     * being disabled.
+     */
+    _syncLoopStart() {
+        const select = this._el('arrangementLoopStart');
+        if (!select) return;
+        const { arrangement } = this.studio;
+        const length = Math.max(1, arrangement.getChain().length);
+
+        const options = [];
+        for (let measure = 0; measure < length; measure++) {
+            const option = document.createElement('option');
+            option.value = String(measure);
+            option.textContent =
+                measure === 0
+                    ? translateOr('arrangement.loopwhole', 'Loop: whole song')
+                    : translateOr('arrangement.loopfrommeasure', 'Loop from {measure}', { measure: measure + 1 });
+            options.push(option);
+        }
+        select.replaceChildren(...options);
+        select.value = String(arrangement.loopStart || 0);
+        select.disabled = length < 2;
+    }
+
+    /** The mark on the measure the loop comes back to, without a rebuild. */
+    _markLoopStart() {
+        const start = this.studio.arrangement.loopStart;
+        for (const number of this.root.querySelectorAll('.mixer-measure-number')) {
+            const here = start > 0 && Number(number.dataset.measure) === start;
+            number.classList.toggle('is-loop-start', here);
+            if (here) number.title = translateOr('arrangement.loopfrom', 'The loop starts here');
+            else number.removeAttribute('title');
+        }
     }
 
     _buildHeader() {
@@ -89,6 +127,11 @@ export class ArrangementPanel {
             number.dataset.measure = String(measure);
             number.style.cursor = 'pointer';
             number.addEventListener('click', () => this._seek(measure));
+            // Where the loop comes back to, when the song has an intro.
+            if (measure > 0 && measure === this.studio.arrangement.loopStart) {
+                number.classList.add('is-loop-start');
+                number.title = translateOr('arrangement.loopfrom', 'The loop starts here');
+            }
             numbers.append(number);
         }
 
@@ -299,6 +342,13 @@ export class ArrangementPanel {
             this.studio.history.saveState('Clear arrangement');
         });
 
+        const loopStart = this._el('arrangementLoopStart');
+        loopStart?.addEventListener('change', () => {
+            if (!this.studio.arrangement.setLoopStart(Number(loopStart.value))) return;
+            this.studio.history.saveState('Loop start');
+            this.render();
+        });
+
         const presets = this._el('arrangementPresets');
         presets?.addEventListener('change', () => {
             const name = presets.value;
@@ -368,6 +418,8 @@ export class ArrangementPanel {
             } else {
                 this._redrawCells(chain);
                 this._syncToggle();
+                this._syncLoopStart();
+                this._markLoopStart();
             }
         });
 

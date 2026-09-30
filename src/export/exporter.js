@@ -15,6 +15,7 @@ import { encodeAudio, getEncoder } from './encoders.js';
 import { renderSong } from './render.js';
 import { resolveExportFilename, abbreviateScale, DEFAULT_TEMPLATE } from './filename.js';
 import { createZipBlob } from './zip.js';
+import { loopPoints } from './loop-points.js';
 
 const TRACK_COUNT = 8;
 
@@ -36,6 +37,9 @@ export const EXPORT_DEFAULTS = Object.freeze({
     bitDepth: 16,
     normalize: true,
     loopReady: false,
+    // Write where the loop is into the file (OGG, FLAC, WAV), past the
+    // arrangement's intro. Implies loop-ready: no release tail.
+    loopPoints: false,
     patternScope: 'all', // patterns mode: all, or the selected one
     selectedPattern: 0
 });
@@ -56,6 +60,10 @@ export function getExportPatterns(sequencer, arrangement = null) {
 
     const filled = patternsWithContent(sequencer);
     return filled.length > 0 ? filled : [0];
+}
+
+function sameMeasures(a, b) {
+    return a.length === b.length && a.every((measure, i) => measure === b[i]);
 }
 
 /** @returns {number[]} indices of the patterns that hold at least one note */
@@ -116,7 +124,7 @@ export class Exporter {
         const buffer = await this._render({ patterns });
 
         onProgress?.('Encoding', 70);
-        return this._encode(buffer, { track: 'FullMix', pattern: 'All' });
+        return this._encode(buffer, { track: 'FullMix', pattern: 'All' }, { loopStart: this._loopStart(patterns) });
     }
 
     /** One file per track that has something on it. @returns {Promise<ExportedFile[]>} */
@@ -132,7 +140,8 @@ export class Exporter {
                 await this._encode(
                     buffer,
                     { track: this.trackNames[track], pattern: 'All' },
-                    { varyBy: 'Track' }
+                    // Every stem loops where the mix does, so they stay together.
+                    { varyBy: 'Track', loopStart: this._loopStart(patterns) }
                 )
             );
         }
@@ -204,13 +213,39 @@ export class Exporter {
             tracks,
             sampleRate: this.settings.sampleRate,
             normalize: this.settings.normalize,
-            loopReady: this.settings.loopReady
+            loopReady: this.settings.loopReady || this.settings.loopPoints
         });
     }
 
-    async _encode(buffer, naming, options = {}) {
-        const { blob, extension } = await encodeAudio(buffer, this.settings.format, this.settings);
-        return { name: this._filename({ ...naming, ext: extension }, options), blob };
+    /**
+     * @param {object} [options]
+     * @param {'Track'|'Pattern'|null} [options.varyBy]
+     * @param {number} [options.loopStart]  the measure the loop starts at; a
+     *   pattern exported on its own loops whole
+     */
+    async _encode(buffer, naming, { varyBy = null, loopStart = 0 } = {}) {
+        const { sequencer } = this.sources;
+        const loop = this.settings.loopPoints
+            ? loopPoints({
+                  bpm: sequencer.bpm,
+                  steps: sequencer.steps,
+                  sampleRate: buffer.sampleRate,
+                  frames: buffer.length,
+                  loopStart
+              })
+            : null;
+        const { blob, extension } = await encodeAudio(buffer, this.settings.format, { ...this.settings, loop });
+        return { name: this._filename({ ...naming, ext: extension }, { varyBy }), blob };
+    }
+
+    /**
+     * Where the loop starts among the measures being exported: the
+     * arrangement's own, when what is exported is the arrangement.
+     */
+    _loopStart(patterns) {
+        const { arrangement } = this.sources;
+        if (!arrangement?.loopStart) return 0;
+        return sameMeasures(patterns, arrangement.getChain()) ? arrangement.loopStart : 0;
     }
 
     /** Tracks holding at least one note across the measures being exported. */

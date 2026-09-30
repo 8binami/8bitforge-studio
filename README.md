@@ -24,7 +24,7 @@
 - **Mixer, master effects and mastering** (EQ and compressor), with FX and mixer automation.
 - **A procedural generator**: music rules and a seeded random, to throw a starting idea at you. No AI involved.
 - **100+ instruments and kits**, and demo songs to learn from.
-- **Export** to WAV, MP3, OGG, FLAC, AIFF and MIDI: full mix, stems or patterns, with a loop-ready option for game engines.
+- **Export** to WAV, MP3, OGG, FLAC, AIFF and MIDI: full mix, stems or patterns. For game engines, **loop points** in the file (`LOOPSTART` / `LOOPLENGTH` in OGG and FLAC, a `smpl` chunk in WAV), sample-accurate, with an intro that plays once before the loop.
 - **The music is yours**: use it anywhere, commercial games included, no credit required.
 
 ## Screenshots

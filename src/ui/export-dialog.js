@@ -97,6 +97,9 @@ export class ExportDialog {
             normalize: this._el('exportNormalize'),
             loopReady: this._el('exportLoopReady'),
             loopReadyHint: this._el('loopReadyHint'),
+            loopPoints: this._el('exportLoopPoints'),
+            loopPointsHint: this._el('loopPointsHint'),
+            loopPointsText: this._el('loopPointsText'),
             patternOptions: this._el('patternModeOptions'),
             patternSelector: this._el('patternSelector'),
             modeDesc: this._el('exportModeDesc'),
@@ -208,7 +211,7 @@ export class ExportDialog {
         for (const id of ['modeFullMix', 'modeStems', 'modePatterns', 'patAll', 'patSingle']) {
             this._el(id)?.addEventListener('change', () => this._refresh());
         }
-        for (const id of ['wavSampleRate', 'wavBitDepth', 'exportNormalize', 'exportLoopReady']) {
+        for (const id of ['wavSampleRate', 'wavBitDepth', 'exportNormalize', 'exportLoopReady', 'exportLoopPoints']) {
             this._el(id)?.addEventListener('change', () => this._refresh());
         }
 
@@ -257,6 +260,7 @@ export class ExportDialog {
             bitDepth: Number(this._fields.bitDepth?.value ?? 16),
             normalize: Boolean(this._fields.normalize?.checked),
             loopReady: Boolean(this._fields.loopReady?.checked),
+            loopPoints: Boolean(this._fields.loopPoints?.checked),
 
             // What each compressed format asks for. Gathered whatever the
             // chosen format is, because the encoder reads only its own and
@@ -330,7 +334,8 @@ export class ExportDialog {
 
         // What loop-ready does is worth a line, and only while it is on:
         // the markup carries the explanation and nothing ever showed it.
-        this._fields.loopReadyHint?.classList.toggle('d-none', !settings.loopReady);
+        this._fields.loopReadyHint?.classList.toggle('d-none', !settings.loopReady || settings.loopPoints);
+        this._showLoopPoints(settings);
 
         this._fields.patternOptions?.classList.toggle('d-none', settings.mode !== 'patterns');
         this._fields.patternSelector?.classList.toggle(
@@ -357,13 +362,68 @@ export class ExportDialog {
         this._refreshSummary(settings, midi);
     }
 
+    /**
+     * Loop points imply loop-ready (a loop has no release tail), and say
+     * where the loop will start, or why the chosen format cannot hold one.
+     */
+    _showLoopPoints(settings) {
+        const { loopReady, loopPointsHint: hint, loopPointsText: text } = this._fields;
+        if (loopReady) {
+            if (settings.loopPoints) loopReady.checked = true;
+            loopReady.disabled = settings.loopPoints;
+        }
+        if (!hint || !text) return;
+        hint.classList.toggle('d-none', !settings.loopPoints);
+        if (!settings.loopPoints) return;
+
+        const small = hint.querySelector('small');
+        const cannot = settings.format === 'mp3' || settings.format === 'aiff';
+        small?.classList.toggle('text-info', !cannot);
+        small?.classList.toggle('text-warning', cannot);
+
+        if (settings.format === 'mp3') {
+            text.textContent = translateOr(
+                'export.looppoints.mp3',
+                'MP3 cannot loop without a gap: choose OGG, FLAC or WAV for loop points.'
+            );
+            return;
+        }
+        if (settings.format === 'aiff') {
+            text.textContent = translateOr(
+                'export.looppoints.aiff',
+                'AIFF files do not get loop points: choose OGG, FLAC or WAV.'
+            );
+            return;
+        }
+        if (settings.mode === 'patterns') {
+            text.textContent = translateOr('export.looppoints.patterns', 'Each pattern loops whole, from its first sample.');
+            return;
+        }
+
+        const { sequencer, arrangement } = this.studio;
+        const start = arrangement?.loopStart || 0;
+        const tags = settings.format === 'wav' ? 'smpl' : 'LOOPSTART / LOOPLENGTH';
+        text.textContent = start
+            ? translateOr(
+                  'export.looppoints.intro',
+                  'Written into the file ({tags}), in samples: the intro plays once, then the song loops from measure {measure} ({time}).',
+                  { tags, measure: start + 1, time: formatDuration(estimateDuration(sequencer, start)) }
+              )
+            : translateOr(
+                  'export.looppoints.whole',
+                  'Written into the file ({tags}), in samples: the whole song loops. To keep an intro out of the loop, choose where the loop starts in the arrangement.',
+                  { tags }
+              );
+    }
+
     _refreshSummary(settings, midi) {
         const { sequencer } = this.studio;
         const measures = this._measures(settings).length;
         // The render leaves a second of release after the last note,
         // unless the export is meant to loop.
         const seconds =
-            estimateDuration(sequencer, measures) + (settings.loopReady ? 0 : RELEASE_TAIL_SECONDS);
+            estimateDuration(sequencer, measures) +
+            (settings.loopReady || settings.loopPoints ? 0 : RELEASE_TAIL_SECONDS);
 
         const files = midi ? 1 : this._fileCount(settings);
 

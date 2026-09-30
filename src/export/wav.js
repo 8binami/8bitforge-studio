@@ -6,12 +6,19 @@
  * encoder takes as input.
  *
  * 16 and 24 bit are integer PCM, 32 bit is IEEE float.
+ *
+ * Given loop points, a `smpl` chunk follows the samples: one forward loop,
+ * infinite, from the loop start to the last sample. It is the chunk
+ * samplers and game engines read loop points from in a WAV.
  */
 
 /** Peak the normaliser aims for, leaving a little headroom below clipping. */
 export const NORMALIZE_PEAK = 0.95;
 
 const HEADER_LENGTH = 44;
+
+/** A `smpl` chunk with one loop: an 8-byte chunk header, 36 bytes, 24 per loop. */
+export const SMPL_CHUNK_LENGTH = 8 + 36 + 24;
 
 /**
  * Scale a buffer so its loudest sample sits at the target peak: quiet
@@ -46,9 +53,11 @@ export function normalizeBuffer(buffer, peak = NORMALIZE_PEAK) {
  *
  * @param {AudioBuffer} buffer
  * @param {16|24|32} [bitDepth]
+ * @param {object} [options]
+ * @param {import('./loop-points.js').LoopPoints|null} [options.loop]  written as a `smpl` chunk
  * @returns {ArrayBuffer}
  */
-export function encodeWav(buffer, bitDepth = 16) {
+export function encodeWav(buffer, bitDepth = 16, { loop = null } = {}) {
     if (![16, 24, 32].includes(bitDepth)) {
         throw new RangeError(`Unsupported bit depth: ${bitDepth}`);
     }
@@ -57,12 +66,16 @@ export function encodeWav(buffer, bitDepth = 16) {
     const bytesPerSample = bitDepth / 8;
     const blockAlign = channelCount * bytesPerSample;
     const dataLength = buffer.length * blockAlign;
+    // A chunk after one of odd length starts on the next even byte.
+    const padding = loop && dataLength % 2 === 1 ? 1 : 0;
+    const smplLength = loop ? SMPL_CHUNK_LENGTH : 0;
+    const fileLength = HEADER_LENGTH + dataLength + padding + smplLength;
 
-    const arrayBuffer = new ArrayBuffer(HEADER_LENGTH + dataLength);
+    const arrayBuffer = new ArrayBuffer(fileLength);
     const view = new DataView(arrayBuffer);
 
     writeString(view, 0, 'RIFF');
-    view.setUint32(4, HEADER_LENGTH + dataLength - 8, true);
+    view.setUint32(4, fileLength - 8, true);
     writeString(view, 8, 'WAVE');
 
     writeString(view, 12, 'fmt ');
@@ -104,7 +117,33 @@ export function encodeWav(buffer, bitDepth = 16) {
         }
     }
 
+    if (loop) writeSmplChunk(view, offset + padding, buffer.sampleRate, loop);
+
     return arrayBuffer;
+}
+
+/**
+ * The `smpl` chunk: sampler data with one loop. Its end is the loop's last
+ * sample, not the one after it.
+ */
+function writeSmplChunk(view, at, sampleRate, loop) {
+    writeString(view, at, 'smpl');
+    view.setUint32(at + 4, SMPL_CHUNK_LENGTH - 8, true);
+    view.setUint32(at + 8, 0, true); // manufacturer
+    view.setUint32(at + 12, 0, true); // product
+    view.setUint32(at + 16, Math.round(1e9 / sampleRate), true); // sample period, ns
+    view.setUint32(at + 20, 60, true); // MIDI unity note: middle C, played as recorded
+    view.setUint32(at + 24, 0, true); // pitch fraction
+    view.setUint32(at + 28, 0, true); // SMPTE format
+    view.setUint32(at + 32, 0, true); // SMPTE offset
+    view.setUint32(at + 36, 1, true); // one loop
+    view.setUint32(at + 40, 0, true); // no sampler-specific data
+    view.setUint32(at + 44, 0, true); // cue point id
+    view.setUint32(at + 48, 0, true); // type: forward
+    view.setUint32(at + 52, loop.start, true);
+    view.setUint32(at + 56, loop.start + loop.length - 1, true);
+    view.setUint32(at + 60, 0, true); // fraction
+    view.setUint32(at + 64, 0, true); // play count: forever
 }
 
 /**
@@ -113,8 +152,8 @@ export function encodeWav(buffer, bitDepth = 16) {
  * @param {16|24|32} [bitDepth]
  * @returns {Blob}
  */
-export function encodeWavBlob(buffer, bitDepth = 16) {
-    return new Blob([encodeWav(buffer, bitDepth)], { type: 'audio/wav' });
+export function encodeWavBlob(buffer, bitDepth = 16, options = {}) {
+    return new Blob([encodeWav(buffer, bitDepth, options)], { type: 'audio/wav' });
 }
 
 function writeString(view, offset, text) {

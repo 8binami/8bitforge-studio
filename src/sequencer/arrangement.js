@@ -8,6 +8,11 @@
  *
  * The first step 0 after starting must not advance: playback is already on
  * the right measure: hence `hasPlayedFirstStep`.
+ *
+ * A song may have an intro that plays once: `loopStart` is the measure the
+ * song loops back to. Looped playback goes back there rather than to the
+ * top, and an export with loop points marks it in the file, so what the
+ * studio plays and what a game plays are the same music.
  */
 
 import { bus as sharedBus } from '../core/event-bus.js';
@@ -71,6 +76,9 @@ export class Arrangement {
 
         /** How many measures the mixer automation lanes span. */
         this.mixerMeasures = 8;
+
+        /** The measure the song loops back to; 0 means it has no intro. */
+        this.loopStart = 0;
     }
 
     // ── Chain editing ────────────────────────────────────────────────────
@@ -143,6 +151,19 @@ export class Arrangement {
 
         this.setChain(preset.chain);
         this.currentChainIndex = 0;
+        return true;
+    }
+
+    /**
+     * Where the loop begins: the measures before it are an intro, heard once.
+     * @param {number} measureIndex  0 for no intro
+     * @returns {boolean} whether it changed
+     */
+    setLoopStart(measureIndex) {
+        const next = clampLoopStart(measureIndex, this.chain.length);
+        if (next === this.loopStart) return false;
+        this.loopStart = next;
+        this._announce();
         return true;
     }
 
@@ -222,7 +243,8 @@ export class Arrangement {
                 this.sequencer.stop();
                 return;
             }
-            this.currentChainIndex = 0;
+            // Round again, past the intro: it is heard once, at the start.
+            this.currentChainIndex = this.loopStart < this.chain.length ? this.loopStart : 0;
         }
 
         this._switchToCurrentMeasure();
@@ -250,7 +272,8 @@ export class Arrangement {
             enabled: this.enabled,
             chain: [...this.chain],
             currentChainIndex: this.currentChainIndex,
-            mixerMeasures: this.mixerMeasures
+            mixerMeasures: this.mixerMeasures,
+            loopStart: this.loopStart
         };
     }
 
@@ -261,6 +284,8 @@ export class Arrangement {
         this.chain = Array.isArray(data.chain) ? data.chain.map(normalizeMeasure) : [];
         this.currentChainIndex = data.currentChainIndex || 0;
         this.mixerMeasures = data.mixerMeasures || 8;
+        // Absent from projects saved before intros existed: no intro.
+        this.loopStart = clampLoopStart(data.loopStart, this.chain.length);
         this._announce();
     }
 
@@ -285,11 +310,20 @@ export class Arrangement {
     }
 
     _announce() {
+        // A loop cannot start past the end of the song: shortening it past
+        // the loop start takes the intro away.
+        this.loopStart = clampLoopStart(this.loopStart, this.chain.length);
         this._bus.emit(ARRANGEMENT_EVENTS.changed, {
             chain: [...this.chain],
-            enabled: this.enabled
+            enabled: this.enabled,
+            loopStart: this.loopStart
         });
     }
+}
+
+/** A loop start inside a song of `length` measures, or 0: no intro. */
+function clampLoopStart(value, length) {
+    return Number.isInteger(value) && value > 0 && value < length ? value : 0;
 }
 
 /** A measure is a valid pattern index, or null for silence. */

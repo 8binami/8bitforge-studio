@@ -406,6 +406,10 @@
                                             <option value="progressive">Progressive</option>
                                             <option value="8-bar">8-Bar Loop</option>
                                         </select>
+                                        <label class="d-flex align-items-center gap-1 mb-0" for="arrangementLoopStart" title="Loop from measure: the measures before it are an intro, played once" data-i18n-title="arrangement.loopstarttitle" style="font-size: 10px">
+                                            <i class="ti ti-repeat" aria-hidden="true"></i>
+                                            <select id="arrangementLoopStart" class="form-select form-select-sm py-0" style="width: auto; font-size: 10px"></select>
+                                        </label>
                                         <button id="clearChain" class="btn btn-sm btn-outline-danger py-0 px-2" title="Clear" style="font-size: 10px">Clear</button>
                                     </li>
                                 </ul>
@@ -3491,10 +3495,23 @@
                                                 <span data-i18n="export.loopready">Loop-ready</span>
                                             </label>
                                         </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="checkbox" class="form-check-input" id="exportLoopPoints" />
+                                            <label class="form-check-label" for="exportLoopPoints">
+                                                <i class="ti ti-infinity me-1"></i>
+                                                <span data-i18n="export.looppoints">Loop points</span>
+                                            </label>
+                                        </div>
                                         <div id="loopReadyHint" class="d-none">
                                             <small class="text-info">
                                                 <i class="ti ti-info-circle me-1"></i>
                                                 <span data-i18n="export.loopreadyhint">Cuts at exact loop point: no release tail. Perfect for game engines.</span>
+                                            </small>
+                                        </div>
+                                        <div id="loopPointsHint" class="d-none">
+                                            <small class="text-info">
+                                                <i class="ti ti-infinity me-1"></i>
+                                                <span id="loopPointsText"></span>
                                             </small>
                                         </div>
                                     </div>

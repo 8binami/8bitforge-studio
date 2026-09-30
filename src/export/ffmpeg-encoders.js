@@ -42,6 +42,7 @@ import wasmURL from '@ffmpeg/core/wasm?url';
  * development and after a build alike.
  */
 import workerURL from '@ffmpeg/ffmpeg/worker?worker&url';
+import { loopMetadataArguments } from './loop-points.js';
 
 /** The one instance, and the promise that is making it. */
 let starting = null;
@@ -147,16 +148,28 @@ export const ARGUMENTS = Object.freeze({
      *
      * @param {{sampleRate?: number, level?: number}} options
      */
-    flac: ({ sampleRate = 0, level = DEFAULT_FLAC_LEVEL } = {}) => [
+    flac: ({ sampleRate = 0, level = DEFAULT_FLAC_LEVEL, loop = null } = {}) => [
         '-c:a',
         'flac',
         '-compression_level',
         String(level),
-        ...(sampleRate ? ['-ar', String(sampleRate)] : [])
+        ...(sampleRate ? ['-ar', String(sampleRate)] : []),
+        ...loopMetadataArguments(loop)
     ],
 
-    /** @param {{quality?: number}} options */
-    ogg: ({ quality = DEFAULT_OGG_QUALITY } = {}) => ['-c:a', 'libvorbis', '-q:a', String(quality)]
+    /**
+     * With loop points, LOOPSTART and LOOPLENGTH as Vorbis comments, in
+     * samples: what RPG Maker reads to loop past an intro, without a gap.
+     *
+     * @param {{quality?: number, loop?: import('./loop-points.js').LoopPoints|null}} options
+     */
+    ogg: ({ quality = DEFAULT_OGG_QUALITY, loop = null } = {}) => [
+        '-c:a',
+        'libvorbis',
+        '-q:a',
+        String(quality),
+        ...loopMetadataArguments(loop)
+    ]
 });
 
 registerEncoder({

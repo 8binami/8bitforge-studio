@@ -2717,6 +2717,14 @@ html .wrapper:has(.asidebar.open) .content-page.has-scrollbar {
   background: rgba(245, 158, 11, 0.12) !important;
   color: #B45309 !important;
 }
+/* The measure the loop comes back to: the ones before it are an intro. */
+.mixer-measure-number.is-loop-start {
+  box-shadow: inset 2px 0 0 #10b981 !important;
+  color: #10b981 !important;
+}
+.mixer-measure-number.is-loop-start::before {
+  content: "BB  ";
+}
 .mixer-measure-number.seek-active {
   background: rgba(245, 158, 11, 0.25) !important;
   color: #B45309 !important;

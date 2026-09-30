@@ -116,7 +116,7 @@ describe('Arrangement chain editing', () => {
 
         arr.addToChain(1);
 
-        expect(events).toEqual([{ chain: [1], enabled: false }]);
+        expect(events).toEqual([{ chain: [1], enabled: false, loopStart: 0 }]);
     });
 });
 

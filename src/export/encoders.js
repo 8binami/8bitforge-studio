@@ -104,7 +104,7 @@ registerEncoder({
     mimeType: 'audio/wav',
     lossless: true,
     licence: 'AGPL-3.0-or-later',
-    encode: (buffer, { bitDepth = 16 } = {}) => encodeWavBlob(buffer, bitDepth)
+    encode: (buffer, { bitDepth = 16, loop = null } = {}) => encodeWavBlob(buffer, bitDepth, { loop })
 });
 
 registerEncoder({
