@@ -29,6 +29,19 @@ const COVER_QUALITY = 0.85;
 export const DEFAULT_COVER = 'img/kits/default.svg';
 
 /**
+ * The cover of something the community shared: the picture the API stores
+ * for it (cover_url), or null. Only an https address is taken, since it is
+ * drawn into the page.
+ *
+ * @param {{cover_url?: unknown}} item  a row of GET /v1/shared
+ * @returns {string|null}
+ */
+export function sharedCoverUrl(item) {
+    const url = item?.cover_url;
+    return typeof url === 'string' && /^https:\/\/[^\s"'<>]+$/.test(url) ? url : null;
+}
+
+/**
  * Read a picked file and shrink it to a storable cover.
  *
  * @param {File} file

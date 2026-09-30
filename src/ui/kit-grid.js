@@ -20,7 +20,7 @@
 import { LIBRARY_KINDS, LIBRARY_EVENTS } from '../storage/library.js';
 import { normalize } from '../storage/library-search.js';
 import { escapeHtml } from './preset-browser.js';
-import { DEFAULT_COVER } from './cover-image.js';
+import { DEFAULT_COVER, sharedCoverUrl } from './cover-image.js';
 import { DEFAULT_KIT_CATEGORY, categoryLabel } from './library-categories.js';
 import { translateOr } from '../i18n/i18n.js';
 
@@ -205,14 +205,14 @@ export class KitGrid {
         return [...builtin, ...saved];
     }
 
-    /** What people shared, as cards. Their covers come with the file. */
+    /** What people shared, as cards, with the cover the API keeps for each. */
     async fetchCommunity() {
         const { items } = await this.community.list(LIBRARY_KINDS.kits);
         return items.map((item) => ({
             id: `community:${item.id}`,
             name: item.name,
             category: item.category ?? DEFAULT_KIT_CATEGORY,
-            cover: null,
+            cover: sharedCoverUrl(item),
             designer: item.author?.handle ? `@${item.author.handle}` : '-',
             tags: [],
             source: 'community',

@@ -25,6 +25,7 @@
 import { LIBRARY_EVENTS } from '../storage/library.js';
 import { normalize } from '../storage/library-search.js';
 import { translateOr } from '../i18n/i18n.js';
+import { sharedCoverUrl } from './cover-image.js';
 
 /**
  * What a row is drawn from, whatever kind it is. A subclass builds these in
@@ -414,6 +415,7 @@ export class PresetBrowser {
             designer: item.author?.handle ? `@${item.author.handle}` : '-',
             tags: [],
             updatedAt: item.updated_at ? new Date(item.updated_at * 1000).toISOString() : null,
+            cover: sharedCoverUrl(item),
             source: 'community',
             shared: item
         }));
