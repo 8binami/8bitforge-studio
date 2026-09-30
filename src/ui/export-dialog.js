@@ -15,10 +15,9 @@
  *
  * What the markup offers and this build cannot do is hidden rather than
  * deleted, the same treatment the community chips get. Four of the five
- * format buttons have no encoder behind them; MIDI type 0 is written
+ * format buttons have no encoder behind them, and MIDI type 0 is written
  * without a tempo, so it would import at whatever the receiving program
- * defaults to; and the Code and Player tabs generate an embeddable player
- * that has never existed here. Each is a decision recorded in
+ * defaults to. Each is a decision recorded in
  * `docs/licensing.md` or in a comment beside it, and the markup is where
  * they come back from.
  *

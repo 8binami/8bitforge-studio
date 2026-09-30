@@ -25,9 +25,7 @@ export const DEFAULT_FEATURES = Object.freeze({
     /** Publish your own kits, presets and projects. */
     publishing: false,
     /** Real-time collaboration on a project. */
-    collaboration: false,
-    /** Embeddable player / widget code export. */
-    embed: false
+    collaboration: false
 });
 
 /**

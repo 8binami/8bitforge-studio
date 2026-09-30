@@ -3305,18 +3305,6 @@
                                         MIDI
                                     </button>
                                 </li>
-                                <li class="nav-item d-none" role="presentation">
-                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#exportCodeTab" type="button" role="tab">
-                                        <i class="ti ti-code me-1"></i>
-                                        Code
-                                    </button>
-                                </li>
-                                <li class="nav-item d-none" role="presentation">
-                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#exportPlayerTab" type="button" role="tab">
-                                        <i class="ti ti-player-play me-1"></i>
-                                        Player
-                                    </button>
-                                </li>
                             </ul>
 
                             <div class="tab-content pt-3">
@@ -3638,167 +3626,7 @@
                                     </div>
                                 </div>
 
-                                <!-- ===== CODE TAB ===== -->
-                                <div class="tab-pane fade d-none" id="exportCodeTab" role="tabpanel">
-                                    <p class="text-muted small mb-3">
-                                        <i class="ti ti-info-circle me-1"></i>
-                                        Embed your project as JavaScript in any website, HTML5 game (Construct, GDevelop, Phaser…). The runtime is loaded from the 8BitForge CDN.
-                                    </p>
 
-                                    <div class="row g-3 mb-3">
-                                        <div class="col-md-8">
-                                            <label class="form-label small fw-semibold">CDN URL</label>
-                                            <input
-                                                type="text"
-                                                id="exportCodeCdnUrl"
-                                                class="form-control form-control-sm font-monospace"
-                                                value="https://cdn.8bitforge.8binami.app/1.0.0/dist/forge-player.min.js"
-                                            />
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label class="form-label small fw-semibold">Format</label>
-                                            <select id="exportCodeFormat" class="form-select form-select-sm">
-                                                <option value="construct3">Construct 3</option>
-                                                <option value="gdevelop">GDevelop</option>
-                                                <option value="phaser">Phaser 3</option>
-                                                <option value="generic">Generic JS</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <div class="d-flex justify-content-between align-items-center mb-1">
-                                            <label class="form-label small fw-semibold mb-0">Generated Code</label>
-                                            <div class="d-flex gap-2">
-                                                <span id="exportCodeSize" class="text-muted" style="font-size: 11px"></span>
-                                                <button class="btn btn-sm btn-outline-secondary py-0 px-2" id="exportCodeRefreshBtn">
-                                                    <i class="ti ti-refresh" style="font-size: 12px"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <textarea
-                                            id="exportCodePreview"
-                                            class="form-control font-monospace"
-                                            style="height: 220px; font-size: 11px; background: #0a0a14; color: #00e5ff; border-color: #1e1e3a; resize: vertical"
-                                            readonly
-                                        ></textarea>
-                                    </div>
-
-                                    <div class="d-flex gap-2">
-                                        <button class="btn btn-outline-info btn-sm" id="exportCodeCopyBtn">
-                                            <i class="ti ti-copy me-1"></i>
-                                            Copy Code
-                                        </button>
-                                        <button class="btn btn-success btn-sm" id="exportCodeDownloadBtn">
-                                            <i class="ti ti-download me-1"></i>
-                                            Download .forge.js
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <!-- ===== PLAYER TAB ===== -->
-                                <div class="tab-pane fade d-none" id="exportPlayerTab" role="tabpanel">
-                                    <p class="text-muted small mb-3">
-                                        <i class="ti ti-info-circle me-1"></i>
-                                        Copy this snippet to embed a SoundCloud-style player in any website or blog post.
-                                    </p>
-
-                                    <div class="row g-3 mb-3">
-                                        <div class="col-md-8">
-                                            <label class="form-label small fw-semibold">CDN URL</label>
-                                            <input
-                                                type="text"
-                                                id="exportPlayerCdnUrl"
-                                                class="form-control form-control-sm font-monospace"
-                                                value="https://cdn.8bitforge.8binami.app/1.0.0/dist/forge-widget.min.js"
-                                            />
-                                        </div>
-                                        <div class="col-md-4 d-flex align-items-end gap-3 flex-wrap">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="exportPlayerAutoplay" />
-                                                <label class="form-check-label small" for="exportPlayerAutoplay">Autoplay</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="exportPlayerLoop" checked />
-                                                <label class="form-check-label small" for="exportPlayerLoop">Loop</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row g-3 mb-3">
-                                        <div class="col-sm-4">
-                                            <label class="form-label small fw-semibold mb-1">Waveform</label>
-                                            <div class="d-flex gap-3">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="exportPlayerWave" id="exportPlayerWaveBars" value="bars" checked />
-                                                    <label class="form-check-label small" for="exportPlayerWaveBars">Bars</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="exportPlayerWave" id="exportPlayerWaveWave" value="wave" />
-                                                    <label class="form-check-label small" for="exportPlayerWaveWave">Wave</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="exportPlayerWave" id="exportPlayerWaveMirror" value="mirror" />
-                                                    <label class="form-check-label small" for="exportPlayerWaveMirror">Mirror</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <label class="form-label small fw-semibold mb-1">Theme</label>
-                                            <div class="d-flex gap-3">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="exportPlayerTheme" id="exportPlayerThemeDark" value="dark" checked />
-                                                    <label class="form-check-label small" for="exportPlayerThemeDark">Dark</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="exportPlayerTheme" id="exportPlayerThemeLight" value="light" />
-                                                    <label class="form-check-label small" for="exportPlayerThemeLight">Light</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row g-3 mb-3">
-                                        <div class="col-auto d-flex align-items-center gap-2">
-                                            <label class="form-label small fw-semibold mb-0">Accent Color</label>
-                                            <input
-                                                type="color"
-                                                id="exportPlayerAccent"
-                                                value="#00e5ff"
-                                                class="form-control form-control-color"
-                                                style="width: 38px; height: 28px; padding: 2px; border-radius: 6px; cursor: pointer"
-                                            />
-                                            <span id="exportPlayerAccentHex" class="text-muted font-monospace" style="font-size: 11px">#00e5ff</span>
-                                        </div>
-                                    </div>
-
-                                    <!-- Widget preview -->
-                                    <div class="mb-3 p-3 rounded" style="background: #f0f0f5; border: 1px solid #d0d0e0">
-                                        <div class="text-muted small mb-2">
-                                            <i class="ti ti-eye me-1"></i>
-                                            Preview
-                                        </div>
-                                        <div id="exportPlayerPreview"></div>
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <div class="d-flex justify-content-between align-items-center mb-1">
-                                            <label class="form-label small fw-semibold mb-0">HTML Snippet</label>
-                                            <span id="exportPlayerSize" class="text-muted" style="font-size: 11px"></span>
-                                        </div>
-                                        <textarea
-                                            id="exportPlayerPreviewCode"
-                                            class="form-control font-monospace"
-                                            style="height: 160px; font-size: 11px; background: #0a0a14; color: #00e5ff; border-color: #1e1e3a; resize: vertical"
-                                            readonly
-                                        ></textarea>
-                                    </div>
-
-                                    <div class="d-flex gap-2">
-                                        <button class="btn btn-outline-info btn-sm" id="exportPlayerCopyBtn">
-                                            <i class="ti ti-copy me-1"></i>
-                                            Copy HTML
-                                        </button>
-                                    </div>
-                                </div>
                             </div>
                             <!-- /tab-content -->
 
@@ -3825,10 +3653,6 @@
                                 <span data-i18n="export.start">Export</span>
                             </button>
                         </div>
-                        <!-- The Code and Player tabs are hidden: generating an embeddable
-     player is a feature this build has never had, and the snippet it
-     wrote pointed at a hosted runtime. The markup stays for whoever
-     ports it. -->
                     </div>
                 </div>
             </div>

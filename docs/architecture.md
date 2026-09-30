@@ -73,7 +73,7 @@ The Electron shell follows the defaults Electron recommends, and adds one rule:
 ## Local first, cloud optional
 
 Nothing contacts a server unless a feature flag in `src/core/config.js` is
-turned on: `account`, `community`, `publishing`, `collaboration`, `embed`. All
+turned on: `account`, `community`, `publishing`, `collaboration`. All
 default to `false`.
 
 Resources (kits, presets, projects) are read through one interface with several
