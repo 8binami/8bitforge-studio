@@ -102,6 +102,11 @@ export class KitGrid {
 
     // ── The chips ────────────────────────────────────────────────────────
 
+    /**
+     * The labels carry `data-i18n`, so a change of language, which
+     * re-translates the studio's markup, reaches them too: built once, they
+     * used to keep the language they were built in.
+     */
     _buildChips() {
         const container = this.root.querySelector('#kitFilterChips');
         if (!container) return;
@@ -111,7 +116,7 @@ export class KitGrid {
             ({ key, icon, label }) => `
             <span class="kit-filter-chip" data-chip="${key}">
                 ${icon ? `<i class="ti ${icon}" style="font-size: 11px"></i> ` : ''}
-                ${escapeHtml(translateOr(label[0], label[1]))}
+                <span data-i18n="${label[0]}">${escapeHtml(translateOr(label[0], label[1]))}</span>
             </span>`
         ).join('');
 
