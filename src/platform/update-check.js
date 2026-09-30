@@ -1,9 +1,12 @@
 /**
  * Tells the desktop app that a newer version is out.
  *
- * It reads the same list the download page of 8bitforge.com shows
- * (api.8binami.com/downloads): the version of a build is the folder its file
- * sits in on the CDN, .../win/2.3.4/8BitForge-2.3.4-win-x64.exe. When this
+ * It reads the same list the download page of 8bitforge.com shows, at an
+ * address of the site's own (8bitforge.com/downloads.json): where the site
+ * keeps the list behind it is the site's business, and can change without an
+ * update of the app. (2.3.3 read api.8binami.com/downloads, which answers for
+ * as long as that version is in use.) The version of a build is the folder
+ * its file sits in on the CDN, .../win/2.3.4/8BitForge-2.3.4-win-x64.exe. When this
  * platform has a newer one, the topbar shows a button to the download page,
  * which knows the installer from the portable, the AppImage from the deb.
  * Nothing is downloaded or installed here.
@@ -15,7 +18,7 @@
 import { translateOr } from '../i18n/i18n.js';
 import { siteUrl } from '../ui/online-panels.js';
 
-export const DOWNLOADS_URL = 'https://api.8binami.com/downloads';
+export const DOWNLOADS_URL = 'https://8bitforge.com/downloads.json';
 
 const CHECKED_KEY = '8bitforge-update-checked';
 const LATEST_KEY = '8bitforge-update-latest';
