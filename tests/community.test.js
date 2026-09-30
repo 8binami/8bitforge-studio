@@ -35,17 +35,20 @@ function setup({ signedIn = true, handle = 'ada' } = {}) {
 }
 
 describe('Community', () => {
-    it('is not available until an account is plugged in and signed in', () => {
+    it('can be browsed by anyone once the account is plugged in; shared to only when signed in', () => {
         const { community, api, account } = setup();
         expect(community.enabled).toBe(false);
         expect(community.available).toBe(false);
+        expect(community.canShare).toBe(false);
 
         community.connect({ api, account });
         expect(community.enabled).toBe(true);
         expect(community.available).toBe(true);
+        expect(community.canShare).toBe(true);
 
         account.signedIn = false;
-        expect(community.available).toBe(false);
+        expect(community.available).toBe(true);
+        expect(community.canShare).toBe(false);
     });
 
     it('tells the windows when it is plugged in', () => {

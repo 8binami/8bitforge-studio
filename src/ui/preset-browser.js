@@ -197,7 +197,7 @@ export class PresetBrowser {
         if (entry.source === 'community') {
             return iconButton('preset-take-btn', 'ti-download', translateOr('community.take', 'Add to my library'));
         }
-        const share = this.community?.available
+        const share = this.community?.canShare
             ? iconButton('preset-share-btn', 'ti-share', translateOr('share.button', 'Share with the community'))
             : '';
         const exporter = this.community

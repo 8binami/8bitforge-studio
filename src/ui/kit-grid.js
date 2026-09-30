@@ -136,7 +136,8 @@ export class KitGrid {
             this._setSource(this._source === key ? null : key);
         });
 
-        // The Community chip is for someone signed in, and goes on signing out.
+        // The Community chip is there whenever the build has the community:
+        // anyone may browse it, signed in or not.
         const syncCommunity = () => {
             const available = Boolean(this.community?.available);
             container.querySelector('[data-chip="community"]')?.classList.toggle('d-none', !available);
@@ -268,7 +269,7 @@ export class KitGrid {
                 if (this.community) {
                     actions.push(button('export', 'ti-file-export', translateOr('library.export', 'Export to a file')));
                 }
-                if (this.community?.available) {
+                if (this.community?.canShare) {
                     actions.push(button('share', 'ti-share', translateOr('share.button', 'Share with the community')));
                 }
             } else {

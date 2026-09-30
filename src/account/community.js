@@ -81,8 +81,18 @@ export class Community {
         this.bus?.emit(ACCOUNT_EVENTS.changed, { user: account?.user ?? null });
     }
 
-    /** Whether the community can be browsed from here: signed in, in a build with the account. */
+    /**
+     * Whether the community can be browsed from here: in a build with the
+     * account, signed in or not. Looking at what people shared and taking it
+     * asks the API for nothing private, so it needs no account: only sharing
+     * does (`canShare`).
+     */
     get available() {
+        return Boolean(this.api);
+    }
+
+    /** Whether one's own can be shared from here: signed in, in a build with the account. */
+    get canShare() {
         return Boolean(this.api && this.account?.signedIn);
     }
 
@@ -91,7 +101,7 @@ export class Community {
         return Boolean(this.api && this.account);
     }
 
-    /** Call back whenever `available` may have changed. */
+    /** Call back whenever `available` or `canShare` may have changed. */
     onChange(callback) {
         return this.bus?.on(ACCOUNT_EVENTS.changed, callback) ?? (() => {});
     }
@@ -154,7 +164,7 @@ export class Community {
      * when there is no username yet to put it under.
      */
     async requestShare(kind, id) {
-        if (!this.available) return;
+        if (!this.canShare) return;
         if (!this.account.user?.handle) {
             this.askForHandle();
             return;
