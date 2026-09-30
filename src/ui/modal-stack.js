@@ -2,9 +2,9 @@
  * Windows on top of windows.
  *
  * Bootstrap opens one modal at a time. The studio window is a modal, and
- * the five windows reached from inside it: the four that name and rename
- * kits and instrument presets, and the confirmation before a delete: are
- * opened over it. Two modals on screen at once is a case Bootstrap does
+ * the windows reached from inside it: the four that name and rename kits
+ * and instrument presets, the confirmation before a delete, and Share,
+ * whose button is in every library window: are opened over it. Two modals on screen at once is a case Bootstrap does
  * not handle, and it goes wrong in three ways.
  *
  * The backdrop is the mildest: every modal gets one and they are all at

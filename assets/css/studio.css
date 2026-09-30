@@ -16,7 +16,7 @@
  * 1040     : Sidebar
  * 1050     : Resize handles
  * 1060     : Base modals (Bootstrap default)
- * 1070     : Stacked modals (kit/preset)
+ * 1070     : Stacked modals (kit/preset, share)
  * 1080     : Dropdowns over modals, mastering
  * 1090     : Confirm dialogs
  * 9999     : Context menu, drag overlays
@@ -437,11 +437,13 @@ li.sidenav-logo-bottom img:hover {
         0 24px 64px rgba(0, 0, 0, 0.4),
         0 0 0 1px rgba(255, 255, 255, 0.04) !important;
 }
-/* Stacked modals (Kit/Preset modals above Studio modal) */
+/* Stacked modals (Kit/Preset modals above Studio modal; Share above
+   whichever library window its button is in) */
 #saveKitModal,
 #editKitModal,
 #savePresetModal,
-#editPresetModal {
+#editPresetModal,
+#shareModal {
     z-index: 1070 !important;
 }
 /* The confirmation, always on top of everything: it may be asked from

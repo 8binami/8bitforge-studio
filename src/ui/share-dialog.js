@@ -12,6 +12,7 @@
 import { LIBRARY_KINDS } from '../storage/library.js';
 import { translateOr } from '../i18n/i18n.js';
 import { escapeHtml } from './preset-browser.js';
+import { stackModal } from './modal-stack.js';
 
 export class ShareDialog {
     /**
@@ -41,6 +42,10 @@ export class ShareDialog {
             submit: $('shareSubmit')
         };
         if (!this.el.modal) return;
+
+        // Its button is in a library window, so it always opens over one:
+        // above that window's backdrop, with the focus handed to it.
+        stackModal(this.el.modal);
 
         this.el.kind.addEventListener('change', () => this._fillItems());
         this.el.submit.addEventListener('click', () => this._share());
