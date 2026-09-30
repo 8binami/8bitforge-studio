@@ -356,8 +356,11 @@ export class MixerPanel {
             size: 32,
             arcColor: '#1abc9c',
             className: 'knob-pan',
-            formatValue: (value) =>
-                value === 0 ? 'C' : value < 0 ? `L${Math.abs(value)}` : `R${value}`,
+            // A project stores pan as -1..1, and 0.14 * 100 is 14.000000000000002.
+            formatValue: (value) => {
+                const pan = Math.round(value);
+                return pan === 0 ? 'C' : pan < 0 ? `L${-pan}` : `R${pan}`;
+            },
             onChange: (value) => {
                 this.studio.audioEngine.setTrackPan(track, value / 100);
                 this.studio.history.saveStateDebounced('Mixer pan', 600);
