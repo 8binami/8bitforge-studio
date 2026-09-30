@@ -654,14 +654,16 @@ export class KeyboardPanel {
         this.midi.ensure();
     }
 
-    _onMidi({ data: [command, midiNote, velocity] }) {
-        const note = NOTES[midiNote % 12];
-        const octave = Math.floor(midiNote / 12) - 1;
+    _onMidi({ data }) {
+        const message = readNoteMessage(data);
+        if (!message) return;
+
+        const note = NOTES[message.note % 12];
+        const octave = Math.floor(message.note / 12) - 1;
         const key = this._key(note, octave);
 
-        // A note-on at zero velocity is how many keyboards say note-off.
-        if (command === 144 && velocity > 0) this._press(key, note, octave);
-        else if (command === 128 || command === 144) this._release(key, note, octave);
+        if (message.on) this._press(key, note, octave);
+        else this._release(key, note, octave);
     }
 
     // ── Following the card ───────────────────────────────────────────────
@@ -710,4 +712,25 @@ function buildKeys() {
 /** A black key's position, in white keys from the start of the keyboard. */
 function blackKeyPosition(note, octave) {
     return (octave - FIRST_OCTAVE) * 7 + (BLACK_KEY_OFFSETS[note] ?? 0);
+}
+
+/**
+ * A note message from a MIDI keyboard, on any of the sixteen channels, or
+ * null for anything else (clock, controllers, aftertouch…).
+ *
+ * The status byte holds the message type in its high four bits and the
+ * channel in its low four: 0x90 is a note-on on channel 1, 0x93 one on
+ * channel 4. Comparing the whole byte heard channel 1 only.
+ *
+ * @param {ArrayLike<number>} data
+ * @returns {{on: boolean, note: number}|null}
+ */
+export function readNoteMessage(data) {
+    if (!data || data.length < 3) return null;
+    const type = data[0] & 0xf0;
+    const note = data[1];
+    // A note-on at zero velocity is how many keyboards say note-off.
+    if (type === 0x90) return { on: data[2] > 0, note };
+    if (type === 0x80) return { on: false, note };
+    return null;
 }
